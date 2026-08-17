@@ -22,4 +22,11 @@ Define and test the v0.1 Multi-Agent Project Protocol. A successful test allows 
 
 1. Read `AGENTS.md`.
 2. Read `docs/architecture.md`.
-3. Consult the Obsidian project `Status.md`, `Decisions.md`, and `Handoff.md` for current state.
+3. Read `docs/project-contract-v0.1.md` when creating or evaluating project state.
+4. Consult the Obsidian project `Status.md`, `Decisions.md`, and `Handoff.md` for current state.
+
+## v0.1 artifacts
+
+- `docs/project-contract-v0.1.md`: human-readable protocol
+- `schemas/project.schema.json`: machine-readable frontmatter schema
+- `templates/project/`: minimum project scaffold

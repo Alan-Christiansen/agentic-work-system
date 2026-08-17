@@ -29,19 +29,11 @@ Load context in this order:
 4. Current task brief or source material
 5. Deeper files only when required
 
-## Initial project contract
+## Project contract
 
-The v0.1 contract will define:
+The v0.1 contract is defined in `project-contract-v0.1.md`. Its machine-readable project-home schema is `../schemas/project.schema.json`, and the copyable minimum scaffold is under `../templates/project/`.
 
-- stable project identity;
-- lifecycle status;
-- objective and definition of done;
-- current outcome and next action;
-- dependencies and blockers;
-- optional repository and external-tool locations;
-- accepted decisions;
-- task briefs and handoffs;
-- agent authority boundaries.
+The contract standardizes stable identity, lifecycle status, objective and definition of done, current outcome and next action, blockers, optional repository locations, accepted decisions, handoffs, context loading, and agent authority boundaries.
 
 ## Capability separation
 
