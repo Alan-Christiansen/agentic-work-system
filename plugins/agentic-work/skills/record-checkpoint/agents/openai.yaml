@@ -1,0 +1,7 @@
+interface:
+  display_name: "Agentic Work: Record Checkpoint"
+  short_description: "Synchronize a reviewed Git checkpoint safely."
+  default_prompt: "Use $agentic-work:record-checkpoint to record my reviewed project checkpoint."
+
+policy:
+  allow_implicit_invocation: false

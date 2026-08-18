@@ -1,0 +1,9 @@
+{
+  "name": "agentic-work",
+  "displayName": "Agentic Work",
+  "description": "Reusable, file-first workflows for projects following the Agentic Work System protocol.",
+  "version": "0.1.1",
+  "author": {
+    "name": "Spectra Studio"
+  }
+}

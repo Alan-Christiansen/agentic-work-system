@@ -30,3 +30,9 @@ Define and test the v0.1 Multi-Agent Project Protocol. A successful test allows 
 - `docs/project-contract-v0.1.md`: human-readable protocol
 - `schemas/project.schema.json`: machine-readable frontmatter schema
 - `templates/project/`: minimum project scaffold
+- `plugins/agentic-work/`: shared Claude/Cowork and ChatGPT/Codex plugin source providing namespaced Agentic Work skills
+- `plugins/agentic-work/skills/record-checkpoint/`: verify a reviewed human-created commit, synchronize the Obsidian project checkpoint, and stop
+- `dist/agentic-work.plugin`: uploadable Claude/Cowork plugin package
+- `.agents/plugins/marketplace.json`: repository-local Codex marketplace catalog
+
+The earlier standalone `agentic-work-record-checkpoint` skill is superseded by the plugin capability `agentic-work:record-checkpoint`.

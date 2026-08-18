@@ -39,6 +39,8 @@ The contract standardizes stable identity, lifecycle status, objective and defin
 
 The Multi-Agent Project Protocol is foundational. The Agentic PM is one capability built on it. Specialist roles such as marketing, research, implementation, and review also consume the same protocol.
 
+Reusable Agentic Work skills may be distributed through thin host-specific plugin manifests around one shared skill source. The canonical package uses the `agentic-work` namespace and keeps each capability independently invocable, such as `agentic-work:record-checkpoint`. Plugin packaging is an adapter and distribution concern; the underlying project contract, skill procedure, and durable state remain provider-neutral files.
+
 ## Deferred architecture
 
 Do not add MCP, A2A, an Obsidian plugin, autonomous scheduling, or a large knowledge-ingestion framework until a real repeated workflow failure justifies it.
