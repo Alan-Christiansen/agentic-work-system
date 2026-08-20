@@ -1,10 +1,16 @@
 ---
+# Setup reference: docs/project-frontmatter-cheat-sheet.md
 type: project
 schema_version: "0.2"
 project_id: project-id
+# planned | active | blocked | paused | complete | cancelled | archived
 status: planned
 domain: domain-id
+# managed | excluded
 pm_scope: excluded
+# Required when pm_scope is managed: direct | enabling | none | unknown
+# income_role: unknown
+# general | software-product | software-tool
 project_profile: general
 created: "YYYY-MM-DD"
 updated: "YYYY-MM-DD"

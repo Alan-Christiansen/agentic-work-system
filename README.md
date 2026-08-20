@@ -28,6 +28,7 @@ Prepare the project system for portfolio management by defining and testing Proj
 ## Current artifacts
 
 - `docs/project-contract-v0.2.md`: current human-readable protocol
+- `docs/project-frontmatter-cheat-sheet.md`: quick reference for project fields and accepted values
 - `docs/project-contract-v0.1.md`: superseded contract retained for reference
 - `schemas/project.schema.json`: current machine-readable frontmatter schema
 - `schemas/project-v0.1.schema.json`: preserved v0.1 frontmatter schema

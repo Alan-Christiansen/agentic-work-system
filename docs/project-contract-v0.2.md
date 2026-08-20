@@ -111,6 +111,8 @@ It must state:
 
 The project home uses the schema in `schemas/project.schema.json`.
 
+For a compact setup reference with every accepted value, see `project-frontmatter-cheat-sheet.md`.
+
 ### Required properties
 
 | Property | Meaning |

@@ -34,6 +34,19 @@ Load context in this order:
 
 Load deeper files only when required.
 
+### Personal context source
+
+An installation may provide a personal context Area outside this reusable repository. Keep the machinery and the personal data separate:
+
+- the always-loaded entry point is a compact working profile plus a routing index;
+- deeper personal, domain, and career sources load only when their routing condition matches the task;
+- project facts remain in project homes rather than being copied into the personal baseline;
+- derived profiles declare their authoritative sources and regeneration date;
+- private context is never auto-loaded and requires direct relevance plus current-session confirmation;
+- durable context discovered during work is proposed back to its canonical source rather than being left only in conversation history.
+
+Prove this loading path manually in real project tasks before adding a skill or other automation.
+
 ## Project contract
 
 The current v0.2 contract is defined in `project-contract-v0.2.md`. Its machine-readable project-home schema is `../schemas/project.schema.json`, the copyable minimum scaffold is under `../templates/project/`, and optional requirements profiles are under `../templates/project-profiles/`. The superseded v0.1 contract remains available as a historical reference.
