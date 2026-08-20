@@ -12,7 +12,7 @@ Build and test a small, provider-neutral project protocol. Prefer demonstrated w
 
 ## Working rules
 
-- Read `README.md`, `docs/architecture.md`, and `docs/project-contract-v0.1.md` before proposing project-protocol or structural changes.
+- Read `README.md`, `docs/architecture.md`, and `docs/project-contract-v0.2.md` before proposing project-protocol or structural changes.
 - Load only the context relevant to the current task.
 - Keep reusable machinery free of Alan's personal, career, and venture data.
 - Make small, reversible changes and verify them in proportion to risk.

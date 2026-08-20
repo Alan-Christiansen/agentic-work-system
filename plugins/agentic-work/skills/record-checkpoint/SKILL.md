@@ -24,7 +24,7 @@ Require repository inspection to remain read-only. Use Git's `--no-optional-lock
 
 Read, in order:
 
-1. the project folder's `AGENTS.md`;
+1. the project folder's `AGENTS.md`, when present;
 2. the project home note;
 3. `Status.md`;
 4. `Handoff.md`;
@@ -63,13 +63,18 @@ Do not promote an item from `Later`, invent a new milestone, or treat a proposal
 
 ### 4. Synchronize the Obsidian project
 
+Resolve the approved lifecycle value before writing. The project-home `status` is canonical; `Status.md` frontmatter must mirror it. If the two values conflict, stop unless the user explicitly supplies the approved value. Mirroring an approved value is factual synchronization, not permission to choose a lifecycle change.
+
 Update the project home frontmatter:
 
-- set `updated` to the current local date;
-- set `next_action` to the same concrete action used in Status.
+- set `updated` to the current calendar date using the project contract's timezone rule;
+- preserve or apply the explicitly approved `status`;
+- set `next_action` to the same concrete action used in Status;
+- set `blocked_by` from the blockers recorded in Status, using `[]` when Status says none. If the blockers cannot be represented confidently as project IDs or named external blockers, stop and report the ambiguity.
 
 Replace outdated state in `Status.md` so it records:
 
+- frontmatter `status` matching the project home and `updated` using the same local calendar date;
 - the accepted commit's short hash and subject;
 - that the companion repository is clean;
 - the completed reviewed outcome;
@@ -97,6 +102,9 @@ Preserve unresolved risks from the prior handoff when they remain true. Do not e
 Re-read the project home, Status, and Handoff. Confirm:
 
 - all three name the same next action;
+- the project-home and Status frontmatter `status` values match the approved lifecycle;
+- the project-home `blocked_by` matches the blockers in Status;
+- the project-home and Status `updated` values use the same current local date;
 - current-state language no longer says the accepted work is uncommitted or awaiting review;
 - the commit hash is accurate;
 - `git --no-optional-locks status --porcelain=v1` remains empty;

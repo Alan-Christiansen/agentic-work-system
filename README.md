@@ -4,7 +4,7 @@ A portable, file-first system for coordinating Alan and multiple AI agents acros
 
 ## Current milestone
 
-Define and test the v0.1 Multi-Agent Project Protocol. A successful test allows one agent to begin a bounded task, another to continue it, and a third to review it using saved project state.
+Prepare the project system for portfolio management by defining and testing Project Contract v0.2, then inventorying the existing `200 - Projects` portfolio without moving or deleting material.
 
 ## Boundaries
 
@@ -22,14 +22,17 @@ Define and test the v0.1 Multi-Agent Project Protocol. A successful test allows 
 
 1. Read `AGENTS.md`.
 2. Read `docs/architecture.md`.
-3. Read `docs/project-contract-v0.1.md` when creating or evaluating project state.
+3. Read `docs/project-contract-v0.2.md` when creating or evaluating project state.
 4. Consult the Obsidian project `Status.md`, `Decisions.md`, and `Handoff.md` for current state.
 
-## v0.1 artifacts
+## Current artifacts
 
-- `docs/project-contract-v0.1.md`: human-readable protocol
-- `schemas/project.schema.json`: machine-readable frontmatter schema
+- `docs/project-contract-v0.2.md`: current human-readable protocol
+- `docs/project-contract-v0.1.md`: superseded contract retained for reference
+- `schemas/project.schema.json`: current machine-readable frontmatter schema
+- `schemas/project-v0.1.schema.json`: preserved v0.1 frontmatter schema
 - `templates/project/`: minimum project scaffold
+- `templates/project-profiles/`: optional requirements profiles for software products and tools
 - `plugins/agentic-work/`: shared Claude/Cowork and ChatGPT/Codex plugin source providing namespaced Agentic Work skills
 - `plugins/agentic-work/skills/record-checkpoint/`: verify a reviewed human-created commit, synchronize the Obsidian project checkpoint, and stop
 - `dist/agentic-work.plugin`: uploadable Claude/Cowork plugin package

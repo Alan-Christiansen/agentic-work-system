@@ -1,5 +1,7 @@
 # Project Contract v0.1
 
+> Superseded by `project-contract-v0.2.md`. Retained with its versioned schema for historical reference.
+
 ## Purpose
 
 This contract defines the minimum durable state required for a human and multiple AI agents to understand, continue, and review a project without relying on shared conversation history.
@@ -83,7 +85,7 @@ It must state:
 
 ## Project frontmatter
 
-The project home uses the schema in `schemas/project.schema.json`.
+The project home uses the preserved schema in `schemas/project-v0.1.schema.json`.
 
 ### Required properties
 
