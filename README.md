@@ -16,7 +16,7 @@ Define and test the v0.1 Multi-Agent Project Protocol. A successful test allows 
 
 ## Project home
 
-`/Users/alanc/_Vaults/💭 Studio-Main/200 - Projects/270 - Tech & Systems/Agentic Work System/Agentic Work System.md`
+`/Users/alanc/_Vaults/Studio-Vault/200 - Projects/270 - Tech & Systems/Agentic Work System/Agentic Work System.md`
 
 ## Start here
 
