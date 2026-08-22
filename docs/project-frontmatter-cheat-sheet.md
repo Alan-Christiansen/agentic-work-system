@@ -95,6 +95,6 @@ Only Alan or an explicitly authorized PM workflow changes project lifecycle, pri
 
 Keep these synchronized:
 
-- Project-home `status` and `Status.md` status
+- Project-home `status` and `xPM/Status.md` status
 - Project-home `next_action`, the detailed Status next action, and the latest Handoff recommendation
 - Project-home `blocked_by` and the detailed Status blockers

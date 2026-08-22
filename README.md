@@ -27,7 +27,7 @@ This path belongs to the current local installation and must not become a requir
 2. Read `docs/architecture.md`.
 3. Read `docs/project-contract-v0.2.md` when creating or evaluating project state.
 4. Read `docs/area-contract-v0.1.md` when creating or evaluating managed Area state.
-5. Consult the Obsidian project `Status.md`, `Decisions.md`, and `Handoff.md` for current state.
+5. Consult the Obsidian project `xPM/Status.md`, `xPM/Decisions.md`, and `xPM/Handoff.md` for agent-maintained state.
 
 ## Current artifacts
 
@@ -40,8 +40,7 @@ This path belongs to the current local installation and must not become a requir
 - `schemas/area.schema.json`: current machine-readable Area-home schema
 - `schemas/project-v0.1.schema.json`: preserved v0.1 frontmatter schema
 - `templates/project/`: minimum project scaffold
-- `templates/area/`: minimum managed-Area scaffold with one human-first Dashboard for tasks and proposed projects
-- `templates/area-optional/`: optional per-item PM Notes created only after real work demonstrates the need
+- `templates/area/`: minimum managed-Area scaffold with one same-named human dashboard and an `xPM/` support bucket
 - `templates/project-profiles/`: optional requirements profiles for software products and tools
 - `plugins/agentic-work/`: shared Claude/Cowork and ChatGPT/Codex plugin source providing namespaced Agentic Work skills
 - `plugins/agentic-work/skills/record-checkpoint/`: verify a reviewed human-created commit, synchronize the Obsidian project checkpoint, and stop

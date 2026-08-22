@@ -15,10 +15,12 @@ Build and test a small, provider-neutral project protocol. Prefer demonstrated w
 - Read `README.md`, `docs/architecture.md`, and the applicable Area or project contract before proposing protocol or structural changes.
 - Load only the context relevant to the current task.
 - For ordinary PM work, establish one domain and the available-time envelope before recommending actions; do not aggregate domains unless Alan explicitly requests a cross-domain capacity review.
-- Before Area recommendations, reread `Dashboard.md`; direct human wording, markers, headings, additions, and deletions are canonical and must not be replaced or resurrected from PM Notes or cached conversation state.
-- Load a linked `PM Notes/AT-*` file only when its task is selected, blocked, due, or otherwise needs restart context; do not load optional detail during a simple Dashboard scan.
-- Load a linked `PM Notes/PC-*` file only when shaping, comparing, or proposing promotion for that project candidate; do not load candidate detail during a simple Dashboard scan.
+- Before Area or Project recommendations, reread the same-named human home; direct human wording, task markers, headings, additions, and deletions are canonical and must not be replaced or resurrected from `xPM/` or cached conversation state.
+- Load a linked `xPM/Notes/AT-*` file only when its Area task is selected, blocked, due, or otherwise needs restart context; do not load optional detail during a simple home-note scan.
+- Load a linked `xPM/Notes/PC-*` file only when shaping, comparing, or proposing promotion for that project candidate; do not load candidate detail during a simple home-note scan.
+- Treat `xPM/` as agent coordination infrastructure. Keep human working notes, requirements, research, records, drafts, and deliverables outside it.
 - Preserve recognized inline task dates, tags, priorities, and recurrence during edits. Treat plugin query views as derived interfaces, never as a second task source of truth.
+- During authorized PM ingestion and review, assign `#urgent`, `#soon`, or no urgency tag based on consequences, dates, actionability, dependencies, and current commitments. Keep `#urgent` rare, remove stale urgency, and treat direct human tag edits as authoritative.
 - Keep reusable machinery free of Alan's personal, career, and venture data.
 - Treat the reusable repository as future-public: do not add secrets, private data, new hard-coded installation paths, or dependencies on one user's vault layout.
 - Make small, reversible changes and verify them in proportion to risk.

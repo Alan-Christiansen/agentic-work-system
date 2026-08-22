@@ -27,8 +27,8 @@ Load context in this order:
 2. Relevant domain context
 3. Area- or project-local `AGENTS.md`, when present
 4. Area or project home
-5. `Status.md` and the latest `Handoff.md`
-6. `Decisions.md` when the task could affect or reopen a prior choice
+5. `xPM/Status.md` and the latest `xPM/Handoff.md`
+6. `xPM/Decisions.md` when the task could affect or reopen a prior PM-governance choice
 7. Current task brief or source material
 8. Repository-local instructions when implementation is involved
 
@@ -55,7 +55,7 @@ The contract standardizes stable identity, lifecycle status, objective and defin
 
 Portfolio eligibility and lifecycle are independent. `pm_scope` determines whether the Agentic PM may use a project in portfolio analysis; `status` continues to describe the project's lifecycle. A missing v0.2 classification is treated as an inventory gap, not permission to load or prioritize the project.
 
-Area Contract v0.1 is defined in `area-contract-v0.1.md`. Its schema is `../schemas/area.schema.json`, and its scaffold is under `../templates/area/`. Areas represent ongoing responsibilities without a definition of done. A managed Area exposes current maintenance state and one human-first `Dashboard.md` containing separate Tasks and Proposed Projects sections.
+Area Contract v0.1 is defined in `area-contract-v0.1.md`. Its schema is `../schemas/area.schema.json`, and its scaffold is under `../templates/area/`. Areas represent ongoing responsibilities without a definition of done. The same-named Area home is its human dashboard, containing separate Tasks and Proposed Projects sections.
 
 Projects and Areas remain distinct. An Area task may be scheduled without creating a project. A proposed project remains outside the active portfolio until Alan and the Agentic PM explicitly agree to promote it. Promotion creates a normal project record, preserves a link to the originating Area and Dashboard proposal or PM Note, and applies Project Contract v0.2.
 
@@ -63,11 +63,15 @@ Agentic PM is one reusable capability, not one continuously loaded global manage
 
 Cross-domain coordination is an optional, explicitly invoked capacity view. It compares compact commitments to help allocate attention among domains, then returns detailed management to the selected domain scope.
 
-The Area Dashboard is user-owned plain Markdown. Its Tasks section is the quick checkbox surface and its Proposed Projects section accepts free-form human intent. Humans can add, block, complete, drop, delete, rename, or revise items directly in Obsidian; agents discover those changes by rereading the Dashboard at the start of relevant PM work. Absence is authoritative, so PM Notes, older conversations, and handoffs cannot resurrect a deleted item. No Obsidian plugin, database, or agent-mediated write is required for the canonical manual workflow.
+The same-named Area or Project home is user-owned plain Markdown and the only required human-facing PM file. Area homes include quick Tasks and free-form Proposed Projects; Project homes include directly editable Tasks and the finishable project definition. Humans can edit these files directly; agents discover changes by rereading them before PM work. Absence is authoritative, so `xPM/`, older conversations, and handoffs cannot resurrect deleted human state.
 
-Task detail uses progressive disclosure. The visible Dashboard checklist stays one line per task. An optional linked `PM Notes/AT-*` file holds restart details only for a task that earns them, and agents load it only when needed.
+Task detail uses progressive disclosure. Visible home-note checklists stay one line per task. An optional linked `xPM/Notes/AT-*` file holds restart details only for an Area task that earns them, and agents load it only when needed.
 
-Project-candidate detail follows the same progressive-disclosure pattern without treating candidates as tasks. Human-authored headings and free-form descriptions remain visible under Proposed Projects; optional linked `PM Notes/PC-*` files hold derived shaping detail and are loaded only during candidate work.
+Project-candidate detail follows the same progressive-disclosure pattern without treating candidates as tasks. Human-authored headings and free-form descriptions remain visible under Proposed Projects; optional linked `xPM/Notes/PC-*` files hold derived shaping detail and are loaded only during candidate work.
+
+`xPM/` is a reserved coordination bucket at the bottom of each Area or Project folder. Status, handoff, PM-governance decisions, and earned per-item support live there. Human working files remain at root or in domain-meaningful folders regardless of whether an agent helped create them.
+
+Canonical tasks remain distributed in their relevant same-named human homes so scoped agents receive complete local context. An optional vault-level Tasks-plugin dashboard provides one eagle-eye human view by querying those sources. It may group `#urgent`, `#soon`, and untagged work, but it never owns or duplicates task state.
 
 Optional task-tool features may enhance that surface without becoming a dependency. Inline dates, tags, priorities, recurrence, and query views are allowed, but the source checkbox line remains the portable canonical record and the full workflow must remain legible without the tool.
 

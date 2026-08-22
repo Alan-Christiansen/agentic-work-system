@@ -13,25 +13,27 @@ This contract applies only to finishable projects. Ongoing responsibilities belo
 | Information | Canonical home |
 |---|---|
 | Objective, scope, ownership, lifecycle, and cross-tool locations | Project home in Obsidian |
-| Current outcome, progress, blockers, and next action | `Status.md` |
-| Accepted choices that constrain future work | `Decisions.md` |
-| Restart state between people, agents, or conversations | `Handoff.md` |
+| Current outcome, progress, blockers, and next action | `xPM/Status.md` |
+| Accepted PM-governance choices that constrain future work | `xPM/Decisions.md` |
+| Restart state between people, agents, or conversations | `xPM/Handoff.md` |
 | Code, tests, reusable machinery, and implementation history | Companion Git repository, when present |
 | Conversations and provider memory | Supporting context only |
 
 ## Required project files
 
-Every v0.2 project retained in `200 - Projects` has one folder containing four required core notes, one project-local assets folder, and—when required by its profile—one profile document:
+Every v0.2 project retained in `200 - Projects` has one same-named human dashboard, one PM support folder, one project-local assets folder, and—when required by its profile—one profile document:
 
 ```text
 Project Name/
 ├── Project Name.md
-├── Status.md
-├── Decisions.md
-├── Handoff.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
-└── Assets/
+├── Assets/
+├── working files and folders...
+└── xPM/
+    ├── Status.md
+    ├── Decisions.md
+    └── Handoff.md
 ```
 
 The core project-home source template is stored as `templates/project/Project Name.md`. Preserve or substitute that filename when copying the scaffold; never copy it as a generic `Project.md`.
@@ -44,20 +46,30 @@ Do not scaffold an obvious archive or deletion candidate merely to retire it. Cl
 
 The project home note has the same base name as its parent project folder: `Project Name/Project Name.md`. Keep that relationship rather than adding a `Home -` prefix or using a generic filename. The project name provides a unique, natural Obsidian link, while `type: project` identifies the note's structural role.
 
-The project home is the stable definition, boundaries, ownership, and navigation point for the project. Detailed requirements belong in the applicable project-profile document. It holds stable information:
+The project home is the only required human-facing PM file. It combines the human dashboard with the stable definition, boundaries, ownership, and navigation point. Detailed requirements belong in the applicable project-profile document. It holds:
 
+- directly editable project tasks;
 - objective;
 - definition of done;
 - important boundaries;
 - ownership;
-- links to project state;
 - repository and external work locations.
 
-Do not turn it into a running log. Frequently changing information belongs in `Status.md`.
+Human working notes, research, plans, drafts, requirements, documents, deliverables, and domain-meaningful folders may live beside the project home. Do not place them in `xPM/` merely because an agent created or uses them.
+
+Do not turn the project home into a running log. Detailed agent-maintained state belongs in `xPM/Status.md`.
+
+### Project tasks
+
+The project home's `## Tasks` section is the canonical human-editable task surface for work that drives the project forward. A bare checkbox is valid. Direct human markers, wording, additions, deletions, dates, and urgency tags override derived xPM state.
+
+Use the same urgency vocabulary as managed Areas: `#urgent`, `#soon`, or no urgency tag. The PM assigns and maintains these tags conservatively during ingestion and review; Alan never has to classify a task before capturing it. `📅` remains a real deadline and `⏳` remains the date work becomes actionable.
+
+A vault-level Tasks-plugin dashboard may aggregate tasks from same-named Project and Area homes. It is a derived interaction view, not another task store.
 
 ### Status
 
-`Status.md` answers:
+`xPM/Status.md` answers:
 
 - What is true now?
 - What outcome is currently active?
@@ -69,13 +81,13 @@ Replace outdated status rather than accumulating a diary. Historical detail belo
 
 ### Current-state synchronization
 
-The project home frontmatter `status` is canonical for lifecycle. `Status.md` frontmatter `status` mirrors that approved value. `Status.md` is canonical for detailed current outcome, progress, blockers, and next action; the project home frontmatter fields `next_action` and `blocked_by` are compact portfolio-index mirrors and must be synchronized whenever that detailed state changes. Synchronizing an already-approved lifecycle value is factual mirroring, not authority to choose or change the lifecycle.
+The project home frontmatter `status` is canonical for lifecycle. `xPM/Status.md` frontmatter `status` mirrors that approved value. `xPM/Status.md` is canonical for detailed agent-maintained outcome, progress, blockers, and next action; the project home frontmatter fields `next_action` and `blocked_by` are compact portfolio-index mirrors and must be synchronized whenever that detailed state changes. Direct human task edits in the project home remain authoritative over derived PM state.
 
-`Handoff.md` records the recommended restart action at the moment of handoff. When a meaningful handoff is written or replaced, its recommendation must match the canonical next action. A later approved task may supersede an older handoff, but Status and the project-home mirrors must not conflict.
+`xPM/Handoff.md` records the recommended restart action at the moment of handoff. When a meaningful handoff is written or replaced, its recommendation must match the canonical next action. A later approved task may supersede an older handoff, but PM Status and the project-home mirrors must not conflict.
 
 ### Decisions
 
-`Decisions.md` records accepted choices that a future participant could otherwise reopen accidentally. A decision entry should include a stable ID, title, date, status, decision, and short rationale.
+`xPM/Decisions.md` records accepted PM-governance choices that a future participant could otherwise reopen accidentally. Substantive product, design, or business decisions may remain with the working material they govern. A PM decision entry should include a stable ID, title, date, status, decision, and short rationale.
 
 Use these statuses:
 
@@ -87,7 +99,7 @@ Do not record brainstorms as decisions. A proposed choice remains in the task di
 
 ### Handoff
 
-`Handoff.md` is a replaceable restart packet, not a permanent transcript. Keep only the latest meaningful handoff unless the project has a demonstrated need for history.
+`xPM/Handoff.md` is a replaceable restart packet, not a permanent transcript. Keep only the latest meaningful handoff unless the project has a demonstrated need for history.
 
 It must state:
 
@@ -232,8 +244,8 @@ Start with the smallest useful context stack:
 2. relevant domain context;
 3. project-local `AGENTS.md`, when present;
 4. project home;
-5. `Status.md` and the latest `Handoff.md`;
-6. `Decisions.md` when the task could affect or reopen a prior choice;
+5. `xPM/Status.md` and the latest `xPM/Handoff.md`;
+6. `xPM/Decisions.md` when the task could affect or reopen a prior PM-governance choice;
 7. the current task brief or source material;
 8. repository-local instructions when implementation is involved.
 
@@ -248,8 +260,8 @@ An agent may:
 - read relevant project and repository files;
 - create or edit artifacts inside the approved task scope;
 - run proportionate tests and inspections;
-- update factual progress in `Status.md`;
-- replace `Handoff.md` after meaningful work;
+- update factual progress in `xPM/Status.md`;
+- replace `xPM/Handoff.md` after meaningful work;
 - report discovered risks and proposed decisions.
 
 ### Changes that require Alan's approval

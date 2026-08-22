@@ -19,21 +19,20 @@ blocked_by: []
 ---
 # Project Name
 
-This is the project home: the stable definition, boundaries, ownership, and navigation point for the project. Detailed requirements belong in the applicable project-profile document.
+## Tasks
 
-## Objective
+- [ ]
+
+## About this Project
+
+### Objective
 What useful change will this project produce?
 
-## Definition of done
+### Definition of done
 - Describe the observable finish line.
 
-## Boundaries
+### Boundaries
 - State important inclusions, exclusions, and ownership limits.
-
-## Project state
-- [[Status]]
-- [[Decisions]]
-- [[Handoff]]
 
 ## Requirements
 Add a link to `Product Requirements` or `Technical Brief` when the selected project profile requires one.

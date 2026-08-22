@@ -18,22 +18,25 @@ blocked_by: []
 ---
 # Area Name
 
-This is the Area home: the stable definition, stewardship standard, boundaries, and navigation point for an ongoing responsibility.
+## Tasks
 
-## Responsibility
+- [ ]
+
+## Proposed Projects
+
+### Project idea
+Write freely about the intent, useful context, links, or anything else worth remembering.
+
+## About this Area
+
+### Responsibility
 What ongoing responsibility belongs here?
 
-## Healthy state
+### Healthy state
 - Describe what responsible maintenance looks like.
 
-## Boundaries
+### Boundaries
 - State important inclusions, exclusions, and ownership limits.
-
-## Area state
-- [[Status]]
-- [[Dashboard]]
-- [[Decisions]]
-- [[Handoff]]
 
 ## Related projects
 Link projects promoted from this Area after they exist.

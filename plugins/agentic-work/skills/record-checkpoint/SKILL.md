@@ -1,6 +1,6 @@
 ---
 name: record-checkpoint
-description: Verify a human-created Git commit for an Agentic Work System project and synchronize the linked Obsidian project home, Status.md, and Handoff.md with that clean checkpoint. Use when the user says work was committed, asks to record or synchronize a checkpoint, or wants stale uncommitted or awaiting-review state replaced after a reviewed commit. Do not use this skill to create commits, push, deploy, choose new scope, or begin the next task.
+description: Verify a human-created Git commit for an Agentic Work System project and synchronize the linked Obsidian project home, xPM/Status.md, and xPM/Handoff.md with that clean checkpoint. Use when the user says work was committed, asks to record or synchronize a checkpoint, or wants stale uncommitted or awaiting-review state replaced after a reviewed commit. Do not use this skill to create commits, push, deploy, choose new scope, or begin the next task.
 ---
 
 # Agentic Work: Record Checkpoint
@@ -26,9 +26,9 @@ Read, in order:
 
 1. the project folder's `AGENTS.md`, when present;
 2. the project home note;
-3. `Status.md`;
-4. `Handoff.md`;
-5. `Decisions.md` only when needed to interpret the next approved action.
+3. `xPM/Status.md`;
+4. `xPM/Handoff.md`;
+5. `xPM/Decisions.md` only when needed to interpret the next approved action.
 
 Read the repository's `AGENTS.md` and `README.md`. Resolve the companion repository from the project home's `repo` property when the user did not provide it explicitly.
 
@@ -63,7 +63,7 @@ Do not promote an item from `Later`, invent a new milestone, or treat a proposal
 
 ### 4. Synchronize the Obsidian project
 
-Resolve the approved lifecycle value before writing. The project-home `status` is canonical; `Status.md` frontmatter must mirror it. If the two values conflict, stop unless the user explicitly supplies the approved value. Mirroring an approved value is factual synchronization, not permission to choose a lifecycle change.
+Resolve the approved lifecycle value before writing. The project-home `status` is canonical; `xPM/Status.md` frontmatter must mirror it. If the two values conflict, stop unless the user explicitly supplies the approved value. Mirroring an approved value is factual synchronization, not permission to choose a lifecycle change.
 
 Update the project home frontmatter:
 
@@ -72,7 +72,7 @@ Update the project home frontmatter:
 - set `next_action` to the same concrete action used in Status;
 - set `blocked_by` from the blockers recorded in Status, using `[]` when Status says none. If the blockers cannot be represented confidently as project IDs or named external blockers, stop and report the ambiguity.
 
-Replace outdated state in `Status.md` so it records:
+Replace outdated state in `xPM/Status.md` so it records:
 
 - frontmatter `status` matching the project home and `updated` using the same local calendar date;
 - the accepted commit's short hash and subject;
@@ -82,7 +82,7 @@ Replace outdated state in `Status.md` so it records:
 - the exact next action;
 - unresolved blockers and later work that remain true.
 
-Replace `Handoff.md` using the project contract's eight sections:
+Replace `xPM/Handoff.md` using the project contract's eight sections:
 
 1. task and intended outcome;
 2. current state;
@@ -95,7 +95,7 @@ Replace `Handoff.md` using the project contract's eight sections:
 
 Include the commit's full or short hash, subject, branch, and clean working-tree result. State that no repository files, ignored artifacts, or Git metadata were changed by this checkpoint-recording task only after validating that claim.
 
-Preserve unresolved risks from the prior handoff when they remain true. Do not edit `Decisions.md` unless the user separately approved a decision change.
+Preserve unresolved risks from the prior handoff when they remain true. Do not edit `xPM/Decisions.md` unless the user separately approved a decision change.
 
 ### 5. Validate and stop
 

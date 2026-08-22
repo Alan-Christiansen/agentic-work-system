@@ -8,45 +8,56 @@ An Area has no definition of done. It may contain routine responsibilities, boun
 
 ## Required Area files
 
-Every managed Area using this contract has one same-named home and four supporting notes:
+Every managed Area using this contract has one same-named human dashboard and one PM support folder:
 
 ```text
 Area Name/
 ├── Area Name.md
-├── Status.md
-├── Dashboard.md
-├── Decisions.md
-└── Handoff.md
+├── working files and folders...
+└── xPM/
+    ├── Status.md
+    ├── Decisions.md
+    ├── Handoff.md
+    └── Notes/                 # optional per-item PM support
 ```
 
 The canonical templates are under `templates/area/`.
 
 ### Area home
 
-The Area home has the same base name as its parent folder. It records:
+The Area home has the same base name as its parent folder and is the only required human-facing PM file. It combines the Area dashboard with its stable definition. It records:
 
 - the ongoing responsibility;
 - what healthy stewardship looks like;
 - important boundaries and ownership;
-- links to current state and the human-facing Dashboard;
+- compact tasks and free-form proposed projects;
 - relevant external work locations.
 
 Do not add a definition of done. An Area is retired only when the responsibility no longer exists or belongs elsewhere.
 
-### Status
+Human working notes, records, research, documents, and domain-meaningful folders may live beside the Area home. The contract reserves only the same-named home and `xPM/`; it does not force working material into a generic Notes folder.
 
-`Status.md` records current health, the one maintenance outcome receiving attention, the next concrete action, blockers, and later concerns. `active` Area status means the responsibility exists; it does not mean the Area should consume primary focus every day.
+### PM support folder
 
-The Area-home `status`, `next_action`, and `blocked_by` fields mirror `Status.md`. The latest Handoff recommendation matches the same next action.
+`xPM/` contains agent coordination machinery rather than ordinary working material:
 
-### Dashboard
+- `xPM/Status.md` records current health, the maintenance outcome receiving attention, next action, blockers, and later concerns;
+- `xPM/Decisions.md` records PM-governance choices that could otherwise be reopened;
+- `xPM/Handoff.md` is the replaceable restart packet;
+- `xPM/Notes/` contains optional per-item agent support created only when earned.
 
-`Dashboard.md` is the canonical human-first working surface for bounded Area tasks and possible future projects. Alan may write, start, block, complete, drop, delete, rename, or revise its contents directly in Obsidian without invoking an agent.
+`active` Area status means the responsibility exists; it does not mean the Area should consume primary focus every day.
+
+The Area-home `status`, `next_action`, and `blocked_by` fields mirror `xPM/Status.md`. The latest `xPM/Handoff.md` recommendation matches the same next action.
+
+### Human dashboard
+
+The same-named Area home is the canonical human-first working surface for bounded Area tasks and possible future projects. Alan may write, start, block, complete, drop, delete, rename, or revise its contents directly in Obsidian without invoking an agent.
 
 The Dashboard keeps tasks and proposed projects visibly separate without splitting the human workflow across files:
 
 ```markdown
-# Dashboard
+# Area Name
 
 ## Tasks
 
@@ -58,16 +69,16 @@ The Dashboard keeps tasks and proposed projects visibly separate without splitti
 Free-form intent, context, links, and notes written in the human's own language.
 ```
 
-Every PM session rereads the current Dashboard before recommending work. Saved human wording, markers, headings, additions, and deletions are authoritative rather than conversation memory or older agent records.
+Every PM session rereads the same-named Area home before recommending work. Saved human wording, markers, headings, additions, and deletions are authoritative rather than conversation memory or older agent records.
 
 #### Tasks
 
 A complete task may be only one line. IDs, dates, rationale, and next-action details are optional. Agents must not ignore or rewrite a quick task merely because metadata is absent.
 
-Keep the checklist visually tight. When a task genuinely needs restart context, generate one support note under `PM Notes/` and add a short link on the task line:
+Keep the checklist visually tight. When a task genuinely needs restart context, generate one support note under `xPM/Notes/` and add a short link on the task line:
 
 ```markdown
-- [!] Register with agency [[PM Notes/AT-001 - Register with agency|details]]
+- [!] Register with agency [[xPM/Notes/AT-001 - Register with agency|details]]
 ```
 
 `AT` means Area Task. Alan does not need to create or manage the ID; the PM assigns it only when generating a support note. Keep sensitive values out of PM Notes.
@@ -82,17 +93,31 @@ The Markdown checkbox marker is canonical for task state:
 | `- [x]` | Complete |
 | `- [-]` | Intentionally dropped |
 
-Do not duplicate task state in a separate field. If older agent text conflicts with the Dashboard marker, the marker wins. Agents must not reopen or rewrite a manually changed task without approval.
+Do not duplicate task state in a separate field. If older agent text conflicts with the Area-home marker, the marker wins. Agents must not reopen or rewrite a manually changed task without approval.
 
 A blocked task's linked PM Note records only the minimum useful restart state: blocker, follow-up date or event, resume condition, and next action. Blocking one task does not block the entire Area or authorize activation of a proposed project.
 
-Agents scan the Dashboard Tasks section first and load a linked task PM Note only when the task is selected, blocked, due for follow-up, or otherwise needs restart context.
+Agents scan the Area home's Tasks section first and load a linked task PM Note only when the task is selected, blocked, due for follow-up, or otherwise needs restart context.
 
 Plain Markdown remains canonical. Optional task-tool dates, priorities, recurrence, tags, and query views may enhance the source task when they change behavior. Do not require a global task tag or add tags that merely repeat Area or domain location. Plugin views remain derived interfaces, not another source of truth.
 
+#### Urgency tags
+
+Use only two qualitative urgency tags:
+
+- `#urgent` means delay has an immediate cost and the task needs attention now;
+- `#soon` means the task should remain prominent in the near term;
+- no urgency tag means normal or backlog work.
+
+The PM assigns and maintains urgency during ingestion and review. It considers real due dates, scheduled actionability, consequences of delay, blockers, dependencies, and current commitments. It removes or downgrades stale urgency and keeps `#urgent` rare. Never require Alan to classify a bare captured task before it is valid.
+
+Dates retain their own meanings: `📅` is a real deadline and `⏳` is when work becomes actionable. A date may influence the PM's urgency judgment but is not replaced by a tag. If both urgency tags are present, `#urgent` wins and the PM removes `#soon` during the next authorized cleanup. Direct human tag edits are authoritative.
+
+An optional vault-level Tasks-plugin dashboard may aggregate canonical tasks from same-named Area and Project homes. It is a derived human view: toggling a result updates the source task, and the dashboard never duplicates or becomes canonical task state.
+
 #### Proposed Projects
 
-The Dashboard's `## Proposed Projects` section contains possible future projects, not ordinary tasks. Use it when work may need its own objective, definition of done, multi-session state, decisions, handoffs, deliverables, or repository.
+The Area home's `## Proposed Projects` section contains possible future projects, not ordinary tasks. Use it when work may need its own objective, definition of done, multi-session state, decisions, handoffs, deliverables, or repository.
 
 Alan may capture a proposed project as a heading followed by any amount of free-form intent, context, links, or notes. No ID, state field, or agent-authored structure is required:
 
@@ -103,32 +128,32 @@ I want to begin with a landing page, add ecommerce later, and explore a sub-bran
 
 Merely appearing under Proposed Projects means the idea is inactive. It does not enter the active portfolio or consume project capacity until Alan and the PM explicitly agree to promote it.
 
-When a proposal earns structured shaping, comparison, or promotion preparation, the PM may generate one note under `PM Notes/` and link it beneath the human description:
+When a proposal earns structured shaping, comparison, or promotion preparation, the PM may generate one note under `xPM/Notes/` and link it beneath the human description:
 
 ```markdown
-[[PM Notes/PC-001 - Wood projects website|PM notes]]
+[[xPM/Notes/PC-001 - Wood projects website|PM notes]]
 ```
 
-`PC` means Project Candidate. Alan does not need to create or manage the ID. The human-authored Dashboard heading and description remain authoritative for existence and intent. The linked PM Note holds derived analysis such as desired outcome, boundary, maturity, start conditions, and an eventual promoted-project link. Agents load it only when working on that proposal.
+`PC` means Project Candidate. Alan does not need to create or manage the ID. The human-authored Area-home heading and description remain authoritative for existence and intent. The linked PM Note holds derived analysis such as desired outcome, boundary, maturity, start conditions, and an eventual promoted-project link. Agents load it only when working on that proposal.
 
 Candidate maturity may be tracked inside its PM Note using `captured`, `candidate`, or `ready`. These are PM interpretations, not activation. `ready` never means active; promotion remains an explicit human decision.
 
 ### Deletion and useful history
 
-The Dashboard is a working surface, not an append-only ledger. Alan may delete an unneeded task or proposed project directly in Obsidian.
+The Area home is a working surface, not an append-only ledger. Alan may delete an unneeded task or proposed project directly in Obsidian.
 
 - Delete freely captured material when its history has no practical value.
 - Prefer `[-]` for a task or a short Decision when cancellation rationale may prevent repeated evaluation.
-- After promotion, retain a compact Dashboard link when origin visibility remains useful, or record the origin in the Project and remove the proposal from the working section.
+- After promotion, retain a compact Area-home link when origin visibility remains useful, or record the origin in the Project and remove the proposal from the working section.
 - Completed tasks may be removed during cleanup when their history no longer helps.
 
-An absent Dashboard item is intentionally absent. Agents must not recreate it from conversation history, an older Handoff, a PM Note, cached context, or provider memory. Derived records reconcile to the Dashboard rather than restoring the item.
+An absent Area-home item is intentionally absent. Agents must not recreate it from conversation history, an older Handoff, a PM Note, cached context, or provider memory. Derived records reconcile to the Area home rather than restoring the item.
 
-Deleting a Dashboard item makes any matching PM Note non-actionable. The note may also be deleted when its history has no practical value; its continued presence never resurrects a task or proposed project.
+Deleting an Area-home item makes any matching PM Note non-actionable. The note may also be deleted when its history has no practical value; its continued presence never resurrects a task or proposed project.
 
 ### Decisions and Handoff
 
-`Decisions.md` records accepted choices that would otherwise be reopened. `Handoff.md` remains a replaceable restart packet for meaningful Area work.
+`xPM/Decisions.md` records accepted PM-governance choices that would otherwise be reopened. `xPM/Handoff.md` remains a replaceable restart packet for meaningful Area work. Substantive business or design decisions may remain with the working material they govern rather than being forced into the PM log.
 
 ## Area frontmatter
 
@@ -197,7 +222,7 @@ Promotion occurs only after Alan and the Agentic PM agree that now is the right 
 2. creates a same-named project folder under `200 - Projects` using Project Contract v0.2;
 3. selects explicit `pm_scope`, `income_role`, and `project_profile` values;
 4. links the project home back to the originating Area and PM Note ID when one exists;
-5. removes or replaces the Dashboard proposal with a compact link according to the chosen history value;
+5. removes or replaces the Area-home proposal with a compact link according to the chosen history value;
 6. records the accepted promotion decision;
 7. synchronizes both Area and project handoffs.
 
@@ -214,10 +239,10 @@ Area Contract v0.1 is ready for broader use when:
 1. one real ongoing responsibility operates from `300 - Areas` as a valid managed Area;
 2. a PM session stays inside one selected domain and fits its recommendation to the stated available time;
 3. a managed record in another domain remains unloaded during normal operation;
-4. a task added or changed directly in the Dashboard is picked up on the next PM read;
+4. a task added or changed directly in the same-named Area home is picked up on the next PM read;
 5. a real Area task is captured and selected without creating a project;
 6. a blocked task preserves its safe resume condition without blocking the entire Area or activating a candidate;
-7. an item deleted from the Dashboard remains absent on the next PM read even if a PM Note remains;
+7. an item deleted from the Area home remains absent on the next PM read even if a PM Note remains;
 8. a real project candidate is captured without entering the active portfolio;
 9. one approved candidate is manually promoted while preserving its origin;
 10. a fresh agent can reconstruct the distinctions from the saved files.
