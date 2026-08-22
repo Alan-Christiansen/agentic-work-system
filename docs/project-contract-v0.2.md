@@ -63,6 +63,8 @@ Do not turn the project home into a running log. Detailed agent-maintained state
 
 The project home's `## Tasks` section is the canonical human-editable task surface for work that drives the project forward. A bare checkbox is valid. Direct human markers, wording, additions, deletions, dates, and urgency tags override derived xPM state.
 
+An empty `## Tasks` section is valid. Do not retain an empty checkbox as a capture placeholder in a Project home: task aggregators correctly treat it as a real task and surface a blank result. Add a checkbox only when it names actual work; use the optional vault-level Inbox for unassigned quick capture.
+
 Use the same urgency vocabulary as managed Areas: `#urgent`, `#soon`, or no urgency tag. The PM assigns and maintains these tags conservatively during ingestion and review; Alan never has to classify a task before capturing it. `📅` remains a real deadline and `⏳` remains the date work becomes actionable.
 
 A vault-level Tasks-plugin dashboard may aggregate tasks from same-named Project and Area homes. It is a derived interaction view, not another task store.

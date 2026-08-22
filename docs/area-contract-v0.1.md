@@ -75,6 +75,8 @@ Every PM session rereads the same-named Area home before recommending work. Save
 
 A complete task may be only one line. IDs, dates, rationale, and next-action details are optional. Agents must not ignore or rewrite a quick task merely because metadata is absent.
 
+An empty `## Tasks` section is valid. Do not retain an empty checkbox as a capture placeholder in an Area home: task aggregators correctly treat it as a real task and surface a blank result. Add a checkbox only when it names actual work; use the optional vault-level Inbox for unassigned quick capture.
+
 Keep the checklist visually tight. When a task genuinely needs restart context, generate one support note under `xPM/Notes/` and add a short link on the task line:
 
 ```markdown

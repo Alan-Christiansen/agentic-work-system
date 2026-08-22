@@ -21,8 +21,6 @@ blocked_by: []
 
 ## Tasks
 
-- [ ]
-
 ## About this Project
 
 ### Objective

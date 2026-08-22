@@ -20,8 +20,6 @@ blocked_by: []
 
 ## Tasks
 
-- [ ]
-
 ## Proposed Projects
 
 ### Project idea
