@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spectrastudio.local/schemas/project-v0.2.schema.json",
+  "title": "Agentic Work System Project Frontmatter v0.2",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "type",
+    "schema_version",
+    "project_id",
+    "status",
+    "domain",
+    "pm_scope",
+    "project_profile",
+    "created",
+    "updated",
+    "next_action",
+    "blocked_by"
+  ],
+  "properties": {
+    "type": {
+      "const": "project"
+    },
+    "schema_version": {
+      "const": "0.2"
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "active",
+        "blocked",
+        "paused",
+        "complete",
+        "cancelled",
+        "archived"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blocked_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date"
+    },
+    "repo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repo_remote": {
+      "type": "string",
+      "format": "uri"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pm_scope": {
+      "enum": [
+        "managed",
+        "excluded"
+      ]
+    },
+    "project_profile": {
+      "enum": [
+        "general",
+        "software-product",
+        "software-tool"
+      ]
+    },
+    "income_role": {
+      "enum": [
+        "direct",
+        "enabling",
+        "none",
+        "unknown"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "pm_scope": {
+            "const": "managed"
+          }
+        },
+        "required": [
+          "pm_scope"
+        ]
+      },
+      "then": {
+        "required": [
+          "income_role"
+        ]
+      }
+    }
+  ]
+}

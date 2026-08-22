@@ -4,7 +4,7 @@ A portable, file-first system for coordinating Alan and multiple AI agents acros
 
 ## Current milestone
 
-Extend portfolio management to ongoing Areas without turning them into artificial projects. Prove Area Contract v0.1 through one real managed Area, then resume project classification and promotion testing.
+Complete an independent `agentic-work:start-project` Area-promotion review after the successful `start-area` dogfood and version `0.3.0` checkpoint.
 
 ## Boundaries
 
@@ -43,6 +43,8 @@ This path belongs to the current local installation and must not become a requir
 - `templates/area/`: minimum managed-Area scaffold with one same-named human dashboard and an `xPM/` support bucket
 - `templates/project-profiles/`: optional requirements profiles for software products and tools
 - `plugins/agentic-work/`: shared Claude/Cowork and ChatGPT/Codex plugin source providing namespaced Agentic Work skills
+- `plugins/agentic-work/skills/start-area/`: create or initialize an ongoing Area while preserving the Area/Project distinction
+- `plugins/agentic-work/skills/start-project/`: directly create a project or promote an approved Area candidate with profile-specific scaffolding and repository setup
 - `plugins/agentic-work/skills/record-checkpoint/`: verify a reviewed human-created commit, synchronize the Obsidian project checkpoint, and stop
 - `dist/agentic-work.plugin`: uploadable Claude/Cowork plugin package
 - `.agents/plugins/marketplace.json`: repository-local Codex marketplace catalog

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic Work: Start Project"
+  short_description: "Create a contract-ready project safely."
+  default_prompt: "Use $agentic-work:start-project to create or promote a project safely."

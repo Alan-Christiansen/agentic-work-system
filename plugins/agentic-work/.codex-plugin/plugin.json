@@ -1,19 +1,21 @@
 {
   "name": "agentic-work",
-  "version": "0.1.1",
-  "description": "Reusable, file-first workflows for projects following the Agentic Work System protocol.",
+  "version": "0.3.0",
+  "description": "Reusable, file-first workflows for Areas and projects following the Agentic Work System protocol.",
   "author": {
     "name": "Spectra Studio"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Agentic Work",
-    "shortDescription": "Run safe, file-first project workflows.",
-    "longDescription": "Agentic Work provides reusable project workflows that coordinate Git repositories with durable Obsidian project state.",
+    "shortDescription": "Run safe, file-first Area and project workflows.",
+    "longDescription": "Agentic Work provides reusable workflows for durable Obsidian Area and project state, with linked Git repositories when projects require them.",
     "developerName": "Spectra Studio",
     "category": "Productivity",
     "capabilities": ["Write"],
     "defaultPrompt": [
+      "Start a contract-ready ongoing Area.",
+      "Start or promote a contract-ready project.",
       "Record my reviewed project checkpoint."
     ]
   }

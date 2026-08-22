@@ -83,7 +83,11 @@ The Multi-Agent Project Protocol is foundational. The Agentic PM is one capabili
 
 Reusable Agentic Work skills may be distributed through thin host-specific plugin manifests around one shared skill source. The canonical package uses the `agentic-work` namespace and keeps each capability independently invocable, such as `agentic-work:record-checkpoint`. Plugin packaging is an adapter and distribution concern; the underlying project contract, skill procedure, and durable state remain provider-neutral files.
 
-Project creation remains a future capability. The manual flow must prove both direct project creation and promotion from an Area Dashboard proposal before a scaffolding skill automates them.
+Project creation is provided by the shared `agentic-work:start-project` skill after manual direct creation and Area promotion proved the workflow. It supports explicit direct-creation and approved Area-promotion modes, preserves existing work and origin history, and instantiates only the requirements profile selected by the project.
+
+The skill applies a stricter initialization rule than the v0.2 minimum: a new `software-product` or `software-tool` initialization is incomplete until an approved local stub repository is created or an existing local repository is verified and linked in both directions. General projects do not require a repository. Repository creation remains a reviewed local action; remotes, dependencies, commits, publication, deployment, and installation changes remain separate authority boundaries.
+
+Area creation is provided by the shared `agentic-work:start-area` skill. It creates or initializes one Area Contract v0.1 record for an ongoing responsibility, keeps human tasks separate from inactive project candidates, preserves existing working material, and never adds a definition of done or software-project profile. Correcting a misclassified existing project remains a separate reviewed mutation; the skill does not silently move, convert, or delete project state.
 
 ## Future distribution boundary
 

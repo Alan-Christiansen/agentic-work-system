@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic Work: Start Area"
+  short_description: "Create a contract-ready ongoing Area safely."
+  default_prompt: "Use $agentic-work:start-area to create or initialize an ongoing Area safely."

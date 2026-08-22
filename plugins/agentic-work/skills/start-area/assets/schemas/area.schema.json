@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spectrastudio.local/schemas/area-v0.1.schema.json",
+  "title": "Agentic Work System Area Frontmatter v0.1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "type",
+    "schema_version",
+    "area_id",
+    "status",
+    "domain",
+    "pm_scope",
+    "created",
+    "updated",
+    "next_action",
+    "blocked_by"
+  ],
+  "properties": {
+    "type": { "const": "area" },
+    "schema_version": { "const": "0.1" },
+    "area_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "status": {
+      "enum": ["active", "paused", "retired"]
+    },
+    "domain": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "pm_scope": {
+      "enum": ["managed", "excluded"]
+    },
+    "income_role": {
+      "enum": ["direct", "enabling", "none", "unknown"]
+    },
+    "created": { "type": "string", "format": "date" },
+    "updated": { "type": "string", "format": "date" },
+    "next_action": { "type": "string", "minLength": 1 },
+    "blocked_by": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "owner": { "type": "string", "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "pm_scope": { "const": "managed" } },
+        "required": ["pm_scope"]
+      },
+      "then": { "required": ["income_role"] }
+    }
+  ]
+}
