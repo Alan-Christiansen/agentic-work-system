@@ -6,6 +6,8 @@ This contract defines the minimum durable state required for a human and multipl
 
 It remains intentionally small. v0.2 adds only the information and folders demonstrated as necessary for portfolio management and repeatable project setup. Project profiles may add files or properties, but they must preserve this common core.
 
+This contract applies only to finishable projects. Ongoing responsibilities belong under `300 - Areas` and use `area-contract-v0.1.md`. A possible future project captured in an Area does not become a project until Alan approves its promotion.
+
 ## Sources of truth
 
 | Information | Canonical home |
@@ -119,7 +121,7 @@ For a compact setup reference with every accepted value, see `project-frontmatte
 |---|---|
 | `type` | Always `project` for the project home |
 | `schema_version` | Contract version used to interpret the frontmatter |
-| `project_id` | Stable, unique, lowercase kebab-case identifier |
+| `project_id` | Stable, globally unique, lowercase kebab-case identifier |
 | `status` | Project lifecycle state |
 | `domain` | Stable domain identifier aligned with the vault domain |
 | `pm_scope` | Whether the Agentic PM may use the project in portfolio analysis |
@@ -154,7 +156,7 @@ Do not add properties merely because they might be useful someday. Extend the sc
 
 ## Agentic PM scope
 
-`pm_scope` is independent of project lifecycle:
+`pm_scope` is independent of project lifecycle and operates inside the project's required `domain`:
 
 | Value | Meaning |
 |---|---|
@@ -162,6 +164,8 @@ Do not add properties merely because they might be useful someday. Extend the sc
 | `excluded` | The Agentic PM must ignore the project unless Alan explicitly brings it into the current task |
 
 A project without a recognized `pm_scope` is unclassified. During inventory, report it without loading deeper project content or using it in recommendations. Do not infer `managed` from folder location, activity, commercial relevance, or prior conversation history.
+
+A normal Agentic PM session selects one domain and may use only managed projects in that domain. `pm_scope: managed` does not authorize cross-domain aggregation. Cross-domain capacity review requires Alan's explicit request and uses compact commitments rather than loading every project's detailed state.
 
 Managed projects must set `income_role` to `direct`, `enabling`, `none`, or `unknown`. It helps the PM distinguish direct revenue work from enabling infrastructure and noncommercial work, but never determines priority by itself.
 
@@ -286,11 +290,12 @@ Before handing off meaningful work:
 The contract passes when:
 
 1. one general project and one software project can be manually represented without unnecessary files;
-2. the Agentic PM includes only projects marked `pm_scope: managed`;
+2. a domain-scoped Agentic PM session includes only projects marked `pm_scope: managed` inside the selected domain;
 3. excluded and unclassified projects do not influence recommendations;
 4. a software project points to the correct requirements profile and companion repository without duplicating implementation state;
 5. project-local assets have an unambiguous home;
 6. the portfolio inventory can classify archive and deletion candidates without scaffolding them first;
 7. the manual workflow reveals no missing field that would block prioritization.
+8. a managed project in another domain remains unloaded unless Alan explicitly requests cross-domain capacity review.
 
 Run this test during the first read-only portfolio inventory and migration pilot before building a scaffolding skill.

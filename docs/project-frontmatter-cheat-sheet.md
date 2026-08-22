@@ -12,7 +12,7 @@ project_id: project-name
 status: planned
 domain: domain-id
 pm_scope: excluded
-income_role: unknown
+# income_role: unknown
 project_profile: general
 created: "YYYY-MM-DD"
 updated: "YYYY-MM-DD"
@@ -29,7 +29,7 @@ Uncomment `income_role` when `pm_scope` is `managed`. Replace every placeholder 
 | ----------------- | ------------------------------------------------- | ------------------------------------------------------------------------- | --- |
 | `type`            | `project`                                         | Fixed value identifying a project home.                                   |     |
 | `schema_version`  | `"0.2"`                                           | Fixed contract version. Keep it quoted.                                   |     |
-| `project_id`      | Lowercase kebab-case, such as `website-refresh`   | Stable unique identifier. Do not change it when the display name changes. |     |
+| `project_id`      | Lowercase kebab-case, such as `website-refresh`   | Stable globally unique identifier. Do not change it when the display name changes. |     |
 | `status`          | See lifecycle values below                        | Current project lifecycle.                                                |     |
 | `domain`          | Lowercase kebab-case, such as `tech-and-systems`  | Stable vault-aligned domain identifier.                                   |     |
 | `pm_scope`        | `managed` or `excluded`                           | Whether the Agentic PM may use the project in portfolio analysis.         |     |
@@ -51,6 +51,8 @@ Uncomment `income_role` when `pm_scope` is `managed`. Replace every placeholder 
 | `unknown` | The income relationship has not been determined. |
 
 `income_role` informs portfolio judgment but never determines priority by itself.
+
+`pm_scope: managed` applies only inside the project's required `domain`. A normal PM session selects one domain and does not load managed records from other domains. Time available and current energy belong to the active PM conversation or task brief, not project frontmatter.
 
 ## Lifecycle values
 
