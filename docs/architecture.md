@@ -4,6 +4,8 @@
 
 Provide the smallest durable contract that allows humans and heterogeneous AI agents to understand, continue, and review project work.
 
+See [System Architecture](system-architecture.md) for the editable Excalidraw overview.
+
 ## System layers
 
 1. **Data:** Area and project definitions, goals, status, decisions, context, and deliverables in their appropriate human-owned locations.
