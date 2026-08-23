@@ -1,6 +1,6 @@
 # Project Frontmatter Cheat Sheet
 
-Use this when creating or updating an Agentic Work System v0.2 project home. The machine-readable source is `schemas/project.schema.json`; the full human-readable rules are in `docs/project-contract-v0.2.md`.
+Use this when creating or updating an Agentic Work System v0.2 project home. The machine-readable source is `schemas/project.schema.json`; the full human-readable rules are in `docs/project-contract.md`.
 
 ## Copyable starting point
 

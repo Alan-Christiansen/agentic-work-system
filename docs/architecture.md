@@ -51,13 +51,13 @@ Prove this loading path manually in real project tasks before adding a skill or 
 
 ## Work contracts
 
-The current v0.2 contract is defined in `project-contract-v0.2.md`. Its machine-readable project-home schema is `../schemas/project.schema.json`, the copyable minimum scaffold is under `../templates/project/`, and optional requirements profiles are under `../templates/project-profiles/`. The superseded v0.1 contract remains available as a historical reference.
+The current v0.2 contract is defined in `project-contract.md`. Its machine-readable project-home schema is `../schemas/project.schema.json`, the copyable minimum scaffold is under `../templates/project/`, and optional requirements profiles are under `../templates/project-profiles/`. Canonical contract and schema filenames remain stable; Git history and release tags preserve superseded versions.
 
 The contract standardizes stable identity, lifecycle status, objective and definition of done, current outcome and next action, blockers, optional repository locations, accepted decisions, handoffs, context loading, and agent authority boundaries. v0.2 adds explicit Agentic PM scope, a small set of project profiles, explicit income relevance, and a project-local assets boundary.
 
 Portfolio eligibility and lifecycle are independent. `pm_scope` determines whether the Agentic PM may use a project in portfolio analysis; `status` continues to describe the project's lifecycle. A missing v0.2 classification is treated as an inventory gap, not permission to load or prioritize the project.
 
-Area Contract v0.1 is defined in `area-contract-v0.1.md`. Its schema is `../schemas/area.schema.json`, and its scaffold is under `../templates/area/`. Areas represent ongoing responsibilities without a definition of done. The same-named Area home is its human dashboard, containing separate Tasks and Proposed Projects sections.
+Area Contract v0.1 is defined in `area-contract.md`. Its schema is `../schemas/area.schema.json`, and its scaffold is under `../templates/area/`. Areas represent ongoing responsibilities without a definition of done. The same-named Area home is its human dashboard, containing separate Tasks and Proposed Projects sections.
 
 Projects and Areas remain distinct. An Area task may be scheduled without creating a project. A proposed project remains outside the active portfolio until Alan and the Agentic PM explicitly agree to promote it. Promotion creates a normal project record, preserves a link to the originating Area and Dashboard proposal or PM Note, and applies Project Contract v0.2.
 

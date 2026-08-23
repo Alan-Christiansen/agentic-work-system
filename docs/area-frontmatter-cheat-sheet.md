@@ -1,6 +1,6 @@
 # Area Frontmatter Cheat Sheet
 
-Use this when creating or updating an Agentic Work System v0.1 Area home. The schema is `schemas/area.schema.json`; the full rules are in `docs/area-contract-v0.1.md`.
+Use this when creating or updating an Agentic Work System v0.1 Area home. The schema is `schemas/area.schema.json`; the full rules are in `docs/area-contract.md`.
 
 ## Copyable starting point
 

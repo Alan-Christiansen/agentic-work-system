@@ -6,7 +6,7 @@ This contract defines the minimum durable state required for a human and multipl
 
 It remains intentionally small. v0.2 adds only the information and folders demonstrated as necessary for portfolio management and repeatable project setup. Project profiles may add files or properties, but they must preserve this common core.
 
-This contract applies only to finishable projects. Ongoing responsibilities belong under `300 - Areas` and use `area-contract-v0.1.md`. A possible future project captured in an Area does not become a project until Alan approves its promotion.
+This contract applies only to finishable projects. Ongoing responsibilities belong under `300 - Areas` and use `area-contract.md`. A possible future project captured in an Area does not become a project until Alan approves its promotion.
 
 ## Sources of truth
 

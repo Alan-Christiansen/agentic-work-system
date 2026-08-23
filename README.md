@@ -25,20 +25,18 @@ This path belongs to the current local installation and must not become a requir
 
 1. Read `AGENTS.md`.
 2. Read `docs/architecture.md`.
-3. Read `docs/project-contract-v0.2.md` when creating or evaluating project state.
-4. Read `docs/area-contract-v0.1.md` when creating or evaluating managed Area state.
+3. Read `docs/project-contract.md` when creating or evaluating project state.
+4. Read `docs/area-contract.md` when creating or evaluating managed Area state.
 5. Consult the Obsidian project `xPM/Status.md`, `xPM/Decisions.md`, and `xPM/Handoff.md` for agent-maintained state.
 
 ## Current artifacts
 
-- `docs/project-contract-v0.2.md`: current human-readable protocol
+- `docs/project-contract.md`: current human-readable protocol
 - `docs/project-frontmatter-cheat-sheet.md`: quick reference for project fields and accepted values
-- `docs/area-contract-v0.1.md`: current protocol for ongoing responsibilities, Area tasks, and project candidates
+- `docs/area-contract.md`: current protocol for ongoing responsibilities, Area tasks, and project candidates
 - `docs/area-frontmatter-cheat-sheet.md`: quick reference for Area fields and accepted values
-- `docs/project-contract-v0.1.md`: superseded contract retained for reference
 - `schemas/project.schema.json`: current machine-readable frontmatter schema
 - `schemas/area.schema.json`: current machine-readable Area-home schema
-- `schemas/project-v0.1.schema.json`: preserved v0.1 frontmatter schema
 - `templates/project/`: minimum project scaffold
 - `templates/area/`: minimum managed-Area scaffold with one same-named human dashboard and an `xPM/` support bucket
 - `templates/project-profiles/`: optional requirements profiles for software products and tools
