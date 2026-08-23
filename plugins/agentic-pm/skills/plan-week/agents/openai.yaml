@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic PM: Plan Week"
+  short_description: "Choose a realistic weekly outcome"
+  default_prompt: "Use $agentic-pm:plan-week to plan one realistic primary outcome for my available week."

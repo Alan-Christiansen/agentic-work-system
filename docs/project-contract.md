@@ -21,14 +21,13 @@ This contract applies only to finishable projects. Ongoing responsibilities belo
 
 ## Required project files
 
-Every v0.2 project retained in `200 - Projects` has one same-named human dashboard, one PM support folder, one project-local assets folder, and—when required by its profile—one profile document:
+Every v0.2 project retained in `200 - Projects` has one same-named human dashboard, one PM support folder, and—when required by its profile—one profile extension:
 
 ```text
 Project Name/
 ├── Project Name.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
-├── Assets/
 ├── working files and folders...
 └── xPM/
     ├── Status.md
@@ -38,7 +37,7 @@ Project Name/
 
 The core project-home source template is stored as `templates/project/Project Name.md`. Preserve or substitute that filename when copying the scaffold; never copy it as a generic `Project.md`.
 
-The two profile documents shown above are alternatives, not universal files. Add only the document required by `project_profile`.
+The two profile documents shown above are alternatives, not universal files. Add only the extension required by `project_profile`. A software-product profile may also add its demonstrated `Product Planning/` structure; general and software-tool projects do not receive that folder by default.
 
 Do not scaffold an obvious archive or deletion candidate merely to retire it. Classify it first; apply the current structure only to projects that will remain active, planned, paused, or otherwise intentionally retained.
 
@@ -114,14 +113,14 @@ It must state:
 7. unresolved questions or risks;
 8. recommended next action.
 
-### Assets
+### Working material and contextual assets
 
-`Assets/` holds project-local working material such as selected references, exports, source documents, and deliverables that belong with the project but not in its Git repository.
+The common project scaffold does not require a root `Assets/` folder. Human working notes, research, screenshots, canvases, exports, source documents, and other project material should live in the domain-meaningful folder that owns or uses them. Create an `Assets/` folder only where a demonstrated workflow benefits from one.
 
+- Existing meaningful asset folders remain valid and must not be removed merely because the default changed.
 - Runtime assets required by software stay in the companion repository.
 - Durable reusable or library assets stay in the established asset system and are linked from the project.
 - Do not duplicate an asset across locations without a specific operational reason.
-- The folder may remain empty until the project needs it.
 
 ## Project frontmatter
 
@@ -206,7 +205,7 @@ The required `project_profile` selects the smallest useful requirements extensio
 | Profile | Use when | Added requirement |
 |---|---|---|
 | `general` | The project does not produce software | No additional required note |
-| `software-product` | The project produces software for an end user or customer | `Product Requirements.md` from `templates/project-profiles/software-product/` |
+| `software-product` | The project produces software for an end user or customer | `Product Requirements.md` and the lean `Product Planning/` structure from `templates/project-profiles/software-product/` |
 | `software-tool` | The project produces a script, library, integration, internal tool, or reusable technical capability | `Technical Brief.md` from `templates/project-profiles/software-tool/` |
 
 A coded project must use one of the two software profiles. Product intent and user-facing requirements remain in the Obsidian project home; implementation architecture, code, tests, and detailed technical documentation remain in the companion repository. Link the two locations instead of duplicating them.
@@ -307,7 +306,7 @@ The contract passes when:
 2. a domain-scoped Agentic PM session includes only projects marked `pm_scope: managed` inside the selected domain;
 3. excluded and unclassified projects do not influence recommendations;
 4. a software project points to the correct requirements profile and companion repository without duplicating implementation state;
-5. project-local assets have an unambiguous home;
+5. working material and contextual assets have an unambiguous domain-meaningful home without requiring unused root folders;
 6. the portfolio inventory can classify archive and deletion candidates without scaffolding them first;
 7. the manual workflow reveals no missing field that would block prioritization.
 8. a managed project in another domain remains unloaded unless Alan explicitly requests cross-domain capacity review.

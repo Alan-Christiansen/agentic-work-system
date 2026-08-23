@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic PM: Choose Next Action"
+  short_description: "Pick one action that fits right now"
+  default_prompt: "Use $agentic-pm:choose-next-action to choose one concrete action for the time and energy I have now."

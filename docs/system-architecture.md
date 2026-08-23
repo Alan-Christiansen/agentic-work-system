@@ -18,6 +18,8 @@ Connectors are bound to their source and destination nodes so they follow blocks
 
 - Same-named Area and Project homes are authoritative human PM surfaces.
 - `xPM/` supports agents and restartability but cannot override or resurrect deleted human state.
+- Reusable Agentic PM behavior lives in Git; personal PM configuration and live state remain in the user's knowledge workspace.
+- `xPM/` is shared coordination infrastructure rather than private storage owned by one PM role.
 - Normal PM work stays inside one selected domain and only loads `pm_scope: managed` records.
 - Proposed Projects become active Projects only after explicit agreement.
 - User-owned work context stays in the knowledge workspace; reusable machinery and implementation history stay in independent Git repositories.

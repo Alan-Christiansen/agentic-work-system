@@ -4,7 +4,7 @@ A portable, file-first system for coordinating Alan and multiple AI agents acros
 
 ## Current milestone
 
-Complete an independent `agentic-work:start-project` Area-promotion review after the successful `start-area` dogfood and version `0.3.0` checkpoint.
+Complete an independent review of the initial `agentic-pm` plugin and the personal/public configuration split.
 
 ## Boundaries
 
@@ -44,7 +44,10 @@ This path belongs to the current local installation and must not become a requir
 - `plugins/agentic-work/skills/start-area/`: create or initialize an ongoing Area while preserving the Area/Project distinction
 - `plugins/agentic-work/skills/start-project/`: directly create a project or promote an approved Area candidate with profile-specific scaffolding and repository setup
 - `plugins/agentic-work/skills/record-checkpoint/`: verify a reviewed human-created commit, synchronize the Obsidian project checkpoint, and stop
+- `plugins/agentic-pm/`: independently versioned project, Area, and portfolio-management skills
+- `plugins/agentic-pm/references/operating-policy.md`: provider-neutral management rules shared by the Agentic PM skills
 - `dist/agentic-work.plugin`: uploadable Claude/Cowork plugin package
-- `.agents/plugins/marketplace.json`: repository-local Codex marketplace catalog
+- `dist/agentic-pm.plugin`: independently uploadable Agentic PM package
+- `.agents/plugins/marketplace.json`: repository-local **Spectra Studio** Codex marketplace catalog
 
 The earlier standalone `agentic-work-record-checkpoint` skill is superseded by the plugin capability `agentic-work:record-checkpoint`.

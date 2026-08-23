@@ -46,7 +46,7 @@ Ask for missing information in one compact intake when practical. Do not invent 
 
 For either software profile, read [references/repository-setup.md](references/repository-setup.md). “Repository not created yet” is not a successful software-project initialization result.
 
-Use only the matching profile template under `assets/project-profiles/`. Do not create both profile files or an empty profile file for `general`.
+Use only the matching profile template tree under `assets/project-profiles/`. The software-product profile includes its demonstrated Product Planning scaffold; the software-tool profile includes only its Technical Brief. Do not mix profile files or create an empty profile extension for `general`.
 
 ## Preflight and approval
 
@@ -54,7 +54,7 @@ Before any mutation:
 
 1. read the nearest applicable `AGENTS.md` files and the current Area or project records allowed by the selected mode;
 2. resolve every project, asset, profile, origin, and repository path exactly;
-3. inspect the destination for files, case variants, symlinks, same-named notes, profile documents, `xPM/`, asset folders, and filename or folder collisions;
+3. inspect the destination for files, case variants, symlinks, same-named notes, profile documents, `xPM/`, profile-provided folders, and filename or folder collisions;
 4. for an existing repository, complete the read-only Git preflight in the repository reference;
 5. identify every file to create, preserve, rename, or edit and every Git operation proposed;
 6. present one compact preflight summary containing the mode, identity, profile, exact paths, repository action, promotion effects, provisional values, collisions, and stop boundaries;
@@ -71,7 +71,7 @@ Project Name/
 ├── Project Name.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
-├── Assets/
+├── Product Planning/        # software-product only
 └── xPM/
     ├── Status.md
     ├── Decisions.md
@@ -82,7 +82,7 @@ Preserve existing working files. Never overwrite a same-named note, profile docu
 
 Record provisional public naming visibly while retaining the stable internal folder name, home filename, and `project_id`.
 
-Keep project-local working material in `Assets/`, runtime software assets in the repository, and durable reusable assets in the installation's established asset system. Normalize one existing asset location only when the move and all affected references are unambiguous. Stop when multiple asset locations, duplicate names, case collisions, unresolved references, or uncertain ownership could duplicate or lose material.
+Keep human working material in the domain-meaningful folder that owns it, runtime software assets in the repository, and durable reusable assets in the installation's established asset system. Preserve existing meaningful asset locations; do not relocate or remove them merely because a profile uses another contextual folder. Stop when duplicate names, case collisions, unresolved references, or uncertain ownership could duplicate or lose material.
 
 Do not claim atomic rollback. If an approved write fails after partial creation, stop, preserve the recoverable state, and report exactly what succeeded and failed. Never delete or overwrite material to simulate a clean rollback.
 
@@ -109,7 +109,7 @@ Before reporting success:
 - verify every required file exists and no forbidden profile file was added;
 - verify dates, frontmatter values, link targets, lifecycle, blockers, and next actions;
 - verify no empty local task placeholder exists;
-- verify existing working files and assets remain present;
+- verify existing working files and meaningful asset locations remain present;
 - for promotion, verify the Area, candidate note when present, and project preserve their origin links and do not represent the project as an inactive proposal;
 - for software profiles, verify the local Git root, absent index lock, required stub files, Obsidian `repo` path, and repository backlink;
 - inspect the final diffs and Git status, distinguishing intended changes from unrelated pre-existing changes;

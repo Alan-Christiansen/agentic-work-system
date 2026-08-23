@@ -53,7 +53,7 @@ Prove this loading path manually in real project tasks before adding a skill or 
 
 The current v0.2 contract is defined in `project-contract.md`. Its machine-readable project-home schema is `../schemas/project.schema.json`, the copyable minimum scaffold is under `../templates/project/`, and optional requirements profiles are under `../templates/project-profiles/`. Canonical contract and schema filenames remain stable; Git history and release tags preserve superseded versions.
 
-The contract standardizes stable identity, lifecycle status, objective and definition of done, current outcome and next action, blockers, optional repository locations, accepted decisions, handoffs, context loading, and agent authority boundaries. v0.2 adds explicit Agentic PM scope, a small set of project profiles, explicit income relevance, and a project-local assets boundary.
+The contract standardizes stable identity, lifecycle status, objective and definition of done, current outcome and next action, blockers, optional repository locations, accepted decisions, handoffs, context loading, and agent authority boundaries. v0.2 adds explicit Agentic PM scope, a small set of project profiles, and explicit income relevance. Working material stays in domain-meaningful folders rather than requiring a universal root asset bucket; the software-product profile includes a lean planning structure with contextual User Experience assets.
 
 Portfolio eligibility and lifecycle are independent. `pm_scope` determines whether the Agentic PM may use a project in portfolio analysis; `status` continues to describe the project's lifecycle. A missing v0.2 classification is treated as an inventory gap, not permission to load or prioritize the project.
 
@@ -61,7 +61,7 @@ Area Contract v0.1 is defined in `area-contract.md`. Its schema is `../schemas/a
 
 Projects and Areas remain distinct. An Area task may be scheduled without creating a project. A proposed project remains outside the active portfolio until Alan and the Agentic PM explicitly agree to promote it. Promotion creates a normal project record, preserves a link to the originating Area and Dashboard proposal or PM Note, and applies Project Contract v0.2.
 
-Agentic PM is one reusable capability, not one continuously loaded global manager. Normal PM operation selects a single domain, loads only explicitly managed state within that domain, and sizes recommendations to the time and attention available for that session. Availability is transient input rather than durable Area metadata.
+Agentic PM is a reusable capability implemented in the independently versioned `agentic-pm` plugin. Normal PM operation selects a single domain, loads only explicitly managed state within that domain, and sizes recommendations to the time and attention available for that session. Availability is transient input rather than durable Area metadata.
 
 Cross-domain coordination is an optional, explicitly invoked capacity view. It compares compact commitments to help allocate attention among domains, then returns detailed management to the selected domain scope.
 
@@ -81,7 +81,11 @@ Optional task-tool features may enhance that surface without becoming a dependen
 
 The Multi-Agent Project Protocol is foundational. The Agentic PM is one capability built on it. Specialist roles such as marketing, research, implementation, and review also consume the same protocol.
 
-Reusable Agentic Work skills may be distributed through thin host-specific plugin manifests around one shared skill source. The canonical package uses the `agentic-work` namespace and keeps each capability independently invocable, such as `agentic-work:record-checkpoint`. Plugin packaging is an adapter and distribution concern; the underlying project contract, skill procedure, and durable state remain provider-neutral files.
+Reusable skills are distributed through thin host-specific plugin manifests around provider-neutral skill sources. `agentic-work` owns Area and Project initialization plus checkpointing. The separate `agentic-pm` plugin owns portfolio review, weekly planning, next-action selection, stuck rescue, Area stewardship, and project-candidate review. Keeping both plugins in this repository preserves one protocol while allowing their versions, installation, and sharing to evolve independently.
+
+The reusable Agentic PM operating policy lives with the `agentic-pm` plugin and contains no required personal, career, venture, or installation-specific state. A user's knowledge workspace supplies personal context, goals, constraints, priorities, and live records. A local Agentic PM note may configure or track adoption for that user, but it is not the canonical behavior definition.
+
+`xPM/` is shared coordination infrastructure defined by the Area and Project contracts. Agentic PM is a primary consumer, but it does not exclusively own those records; implementation, review, and checkpoint agents may also use the same status, decisions, handoff, and progressive-support boundary.
 
 Project creation is provided by the shared `agentic-work:start-project` skill after manual direct creation and Area promotion proved the workflow. It supports explicit direct-creation and approved Area-promotion modes, preserves existing work and origin history, and instantiates only the requirements profile selected by the project.
 

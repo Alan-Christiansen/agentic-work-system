@@ -29,9 +29,13 @@ The repository includes a local Codex marketplace at `.agents/plugins/marketplac
 
 ```sh
 codex plugin marketplace add "<path-to-agentic-work-system>"
-codex plugin add agentic-work@personal
+codex plugin add agentic-work@spectra-studio
 ```
 
 Start a new Codex task after installation so the skill is discovered.
 
 Invoke `$agentic-work:start-area`, `$agentic-work:start-project`, or `$agentic-work:record-checkpoint`, or select the skill from the installed plugin.
+
+## Placeholder branding
+
+The Codex plugin currently uses `assets/spectra-studio-placeholder.png` for both its marketplace logo and composer icon. Replace that file in place when the final Spectra Studio icon is ready; the manifest paths can remain unchanged.

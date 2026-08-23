@@ -1,6 +1,6 @@
 {
   "name": "agentic-work",
-  "version": "0.3.0",
+  "version": "0.3.0+codex.20260823181340",
   "description": "Reusable, file-first workflows for Areas and projects following the Agentic Work System protocol.",
   "author": {
     "name": "Spectra Studio"
@@ -11,8 +11,13 @@
     "shortDescription": "Run safe, file-first Area and project workflows.",
     "longDescription": "Agentic Work provides reusable workflows for durable Obsidian Area and project state, with linked Git repositories when projects require them.",
     "developerName": "Spectra Studio",
+    "brandColor": "#4F46E5",
+    "composerIcon": "./assets/spectra-studio-placeholder.png",
+    "logo": "./assets/spectra-studio-placeholder.png",
     "category": "Productivity",
-    "capabilities": ["Write"],
+    "capabilities": [
+      "Write"
+    ],
     "defaultPrompt": [
       "Start a contract-ready ongoing Area.",
       "Start or promote a contract-ready project.",

@@ -35,8 +35,5 @@ What useful change will this project produce?
 ## Requirements
 Add a link to `Product Requirements` or `Technical Brief` when the selected project profile requires one.
 
-## Assets
-Store project-local working assets in `Assets/`. Keep runtime assets with their implementation and durable library assets in their established asset system.
-
 ## Work locations
 Add repository or external-tool links only when they exist.
