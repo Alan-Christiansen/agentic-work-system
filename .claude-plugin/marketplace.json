@@ -1,0 +1,20 @@
+{
+  "name": "spectra-studio",
+  "owner": {
+    "name": "Spectra Studio",
+    "url": "https://github.com/Alan-Christiansen"
+  },
+  "description": "Provider-neutral, file-first workflows for durable project and Area management.",
+  "plugins": [
+    {
+      "name": "agentic-work",
+      "source": "./plugins/agentic-work",
+      "description": "Reusable, file-first workflows for Areas and projects following the Agentic Work System protocol."
+    },
+    {
+      "name": "agentic-pm",
+      "source": "./plugins/agentic-pm",
+      "description": "Capacity-aware project, Area, and portfolio management over human-owned plain files."
+    }
+  ]
+}
