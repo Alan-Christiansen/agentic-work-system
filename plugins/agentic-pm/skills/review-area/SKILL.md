@@ -9,7 +9,7 @@ Read [the shared operating policy](../../references/operating-policy.md) complet
 
 ## Review
 
-1. Reread the same-named Area home. Confirm it represents an ongoing responsibility and preserve its human-authored Tasks and Proposed Projects sections.
+1. Reread the underscore-prefixed, folder-matching Area home. Confirm it represents an ongoing responsibility and preserve its human-authored Tasks and Proposed Projects sections.
 2. Load `xPM/Status.md` and the latest `xPM/Handoff.md`. Load Decisions only when a prior management choice matters. Load an `AT-*` note only for a selected, blocked, due, or otherwise relevant task; load a `PC-*` note only when candidate work is requested.
 3. Assess Area health, necessary maintenance, open and blocked tasks, scheduled follow-ups, stale urgency, and any proposed project that needs attention without treating candidates as active work.
 4. Recommend one maintenance action that fits the session envelope. If the Area is healthy and no action is needed, say so rather than manufacturing work.

@@ -8,11 +8,11 @@ An Area has no definition of done. It may contain routine responsibilities, boun
 
 ## Required Area files
 
-Every managed Area using this contract has one same-named human dashboard and one PM support folder:
+Every managed Area using this contract has one underscore-prefixed, folder-matching human dashboard and one PM support folder:
 
 ```text
 Area Name/
-├── Area Name.md
+├── _Area Name.md
 ├── working files and folders...
 └── xPM/
     ├── Status.md
@@ -25,7 +25,7 @@ The canonical templates are under `templates/area/`.
 
 ### Area home
 
-The Area home has the same base name as its parent folder and is the only required human-facing PM file. It combines the Area dashboard with its stable definition. It records:
+The Area home is named with one leading underscore followed by the exact parent-folder name: `Area Name/_Area Name.md`. After removing that structural underscore, the base name must equal the folder name exactly. It is the only required human-facing PM file and combines the Area dashboard with its stable definition. It records:
 
 - the ongoing responsibility;
 - what healthy stewardship looks like;
@@ -36,7 +36,7 @@ The Area home has the same base name as its parent folder and is the only requir
 
 Do not add a definition of done. An Area is retired only when the responsibility no longer exists or belongs elsewhere.
 
-Human working notes, records, research, documents, and domain-meaningful folders may live beside the Area home. The contract reserves only the same-named home and `xPM/`; it does not force working material into a generic Notes folder.
+Human working notes, records, research, documents, and domain-meaningful folders may live beside the Area home. The contract reserves only the underscore-prefixed, folder-matching home and `xPM/`; it does not force working material into a generic Notes folder.
 
 ### PM support folder
 
@@ -53,7 +53,7 @@ The Area-home `status`, `next_action`, and `blocked_by` fields mirror `xPM/Statu
 
 ### Human dashboard
 
-The same-named Area home is the canonical human-first working surface for bounded Area tasks and possible future projects. Alan may write, start, block, complete, drop, delete, rename, or revise its contents directly in Obsidian without invoking an agent.
+The underscore-prefixed, folder-matching Area home is the canonical human-first working surface for bounded Area tasks and possible future projects. Alan may write, start, block, complete, drop, delete, rename, or revise its contents directly in Obsidian without invoking an agent.
 Generated Area Markdown uses tight heading spacing: no blank line immediately before or after a heading. Intentional spacing elsewhere remains untouched, and fenced examples retain their literal formatting.
 
 The Dashboard keeps tasks and proposed projects visibly separate without splitting the human workflow across files:
@@ -71,7 +71,7 @@ The Dashboard keeps tasks and proposed projects visibly separate without splitti
 Free-form intent, context, links, and notes written in the human's own language.
 ```
 
-Every PM session rereads the same-named Area home before recommending work. Saved human wording, markers, headings, additions, and deletions are authoritative rather than conversation memory or older agent records.
+Every PM session rereads the underscore-prefixed, folder-matching Area home before recommending work. Saved human wording, markers, headings, additions, and deletions are authoritative rather than conversation memory or older agent records.
 
 #### Agent role
 
@@ -123,7 +123,7 @@ The PM assigns and maintains urgency during ingestion and review. It considers r
 
 Dates retain their own meanings: `📅` is a real deadline and `⏳` is when work becomes actionable. A date may influence the PM's urgency judgment but is not replaced by a tag. If both urgency tags are present, `#urgent` wins and the PM removes `#soon` during the next authorized cleanup. Direct human tag edits are authoritative.
 
-An optional vault-level Tasks-plugin dashboard may aggregate canonical tasks from same-named Area and Project homes. It is a derived human view: toggling a result updates the source task, and the dashboard never duplicates or becomes canonical task state.
+An optional vault-level Tasks-plugin dashboard may aggregate canonical tasks from underscore-prefixed, folder-matching Area and Project homes. It is a derived human view: toggling a result updates the source task, and the dashboard never duplicates or becomes canonical task state.
 
 #### Proposed Projects
 
@@ -229,7 +229,7 @@ A cross-domain review may recommend which domain receives primary attention and 
 Promotion occurs only after Alan and the Agentic PM agree that now is the right time to start. The promotion workflow:
 
 1. confirms the desired outcome and finish line;
-2. creates a same-named project folder under `200 - Projects` using Project Contract v0.3;
+2. creates a project folder under `200 - Projects` with its underscore-prefixed, folder-matching home using Project Contract v0.3;
 3. selects explicit `pm_scope`, `income_role`, and `project_profile` values;
 4. links the project home back to the originating Area and PM Note ID when one exists;
 5. removes or replaces the Area-home proposal with a compact link according to the chosen history value;
@@ -249,7 +249,7 @@ Area Contract v0.2 is ready for broader use when:
 1. one real ongoing responsibility operates from `300 - Areas` as a valid managed Area;
 2. a PM session stays inside one selected domain and fits its recommendation to the stated available time;
 3. a managed record in another domain remains unloaded during normal operation;
-4. a task added or changed directly in the same-named Area home is picked up on the next PM read;
+4. a task added or changed directly in the underscore-prefixed, folder-matching Area home is picked up on the next PM read;
 5. a real Area task is captured and selected without creating a project;
 6. a blocked task preserves its safe resume condition without blocking the entire Area or activating a candidate;
 7. an item deleted from the Area home remains absent on the next PM read even if a PM Note remains;

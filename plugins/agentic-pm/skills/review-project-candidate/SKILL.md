@@ -9,7 +9,7 @@ Read [the shared operating policy](../../references/operating-policy.md) complet
 
 ## Review
 
-1. Reread the originating same-named Area home and locate the human-authored Proposed Projects entry. If the entry is absent, do not reconstruct it from notes or history.
+1. Reread the originating underscore-prefixed, folder-matching Area home and locate the human-authored Proposed Projects entry. If the entry is absent, do not reconstruct it from notes or history.
 2. Load its linked `xPM/Notes/PC-*` file when present. Treat that note as derived shaping support, never as activation or authority over the Area home.
 3. Clarify the desired outcome, finish line, boundaries, dependencies, likely profile, evidence of value, capacity cost, and conditions that would justify starting now.
 4. Distinguish `captured`, `candidate`, and `ready` as optional maturity interpretations. `ready` still means inactive.

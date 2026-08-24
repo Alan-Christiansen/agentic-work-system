@@ -21,11 +21,11 @@ This contract applies only to finishable projects. Ongoing responsibilities belo
 
 ## Required project files
 
-Every v0.3 project retained in `200 - Projects` has one same-named human dashboard, one PM support folder, and—when required by its profile—one profile extension:
+Every v0.3 project retained in `200 - Projects` has one underscore-prefixed, folder-matching human dashboard, one PM support folder, and—when required by its profile—one profile extension:
 
 ```text
 Project Name/
-├── Project Name.md
+├── _Project Name.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
 ├── working files and folders...
@@ -35,7 +35,7 @@ Project Name/
     └── Handoff.md
 ```
 
-The core project-home source template is stored as `templates/project/Project Name.md`. Preserve or substitute that filename when copying the scaffold; never copy it as a generic `Project.md`.
+The core project-home source template is stored as `templates/project/_Project Name.md`. Substitute `Project Name` while preserving the leading underscore when copying the scaffold; never copy it as a generic `Project.md`.
 
 The two profile documents shown above are alternatives, not universal files. Add only the extension required by `project_profile`. A software-product profile may also add its demonstrated `Product Planning/` structure; general and software-tool projects do not receive that folder by default.
 
@@ -43,7 +43,7 @@ Do not scaffold an obvious archive or deletion candidate merely to retire it. Cl
 
 ### Project home
 
-The project home note has the same base name as its parent project folder: `Project Name/Project Name.md`. Keep that relationship rather than adding a `Home -` prefix or using a generic filename. The project name provides a unique, natural Obsidian link, while `type: project` identifies the note's structural role.
+The project home note is named with one leading underscore followed by the exact parent project-folder name: `Project Name/_Project Name.md`. After removing that structural underscore, the base name must equal the folder name exactly. Do not add a `Home -` prefix or use a generic filename. The underscore keeps the main human driver easy to find while `type: project` identifies the note's structural role.
 
 The project home is the only required human-facing PM file. It combines the human dashboard with the stable definition, boundaries, ownership, and navigation point. Detailed requirements belong in the applicable project-profile document. It holds:
 
@@ -74,7 +74,7 @@ An empty `## Tasks` section is valid. Do not retain an empty checkbox as a captu
 
 Use the same urgency vocabulary as managed Areas: `#urgent`, `#soon`, or no urgency tag. The PM assigns and maintains these tags conservatively during ingestion and review; Alan never has to classify a task before capturing it. `📅` remains a real deadline and `⏳` remains the date work becomes actionable.
 
-A vault-level Tasks-plugin dashboard may aggregate tasks from same-named Project and Area homes. It is a derived interaction view, not another task store.
+A vault-level Tasks-plugin dashboard may aggregate tasks from underscore-prefixed, folder-matching Project and Area homes. It is a derived interaction view, not another task store.
 
 ### Status
 

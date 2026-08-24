@@ -11,7 +11,7 @@ Read [the shared operating policy](../../references/operating-policy.md) complet
 
 1. Confirm one selected domain. Only perform cross-domain comparison when the user explicitly requests it.
 2. Establish the review horizon and available capacity when the user wants recommendations rather than a factual inventory.
-3. Inventory candidate records shallowly from their same-named homes. Fully load only records marked `pm_scope: managed` in scope. Report excluded or unclassified records without letting them influence the recommendation.
+3. Inventory candidate records shallowly from their underscore-prefixed, folder-matching homes. Fully load only records marked `pm_scope: managed` in scope. Report excluded or unclassified records without letting them influence the recommendation.
 4. For managed records, load the home and current `xPM/Status.md` and `xPM/Handoff.md`. Load Decisions or per-item Notes only when the policy's routing conditions apply.
 5. Compare active outcomes, necessary Area maintenance, blockers, dependencies, deadlines, and income relationship. Do not invent scores or false precision.
 6. Recommend one primary focus and at most one secondary maintenance responsibility. Explain displacement and identify work that should remain planned, paused, or outside scope.

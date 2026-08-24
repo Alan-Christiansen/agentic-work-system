@@ -17,7 +17,7 @@ Complete an independent review of the initial `agentic-pm` plugin and the person
 
 ## Local dogfood project home
 
-`/Users/alanc/_Vaults/Studio-Vault/200 - Projects/270 - Tech & Systems/Agentic Work System/Agentic Work System.md`
+`/Users/alanc/_Vaults/Studio-Vault/200 - Projects/270 - Tech & Systems/Agentic Work System/_Agentic Work System.md`
 
 This path belongs to the current local installation and must not become a required path for other users.
 
@@ -38,7 +38,7 @@ This path belongs to the current local installation and must not become a requir
 - `schemas/project.schema.json`: current machine-readable frontmatter schema
 - `schemas/area.schema.json`: current machine-readable Area-home schema
 - `templates/project/`: minimum project scaffold
-- `templates/area/`: minimum managed-Area scaffold with one same-named human dashboard and an `xPM/` support bucket
+- `templates/area/`: minimum managed-Area scaffold with one underscore-prefixed folder-matching human dashboard and an `xPM/` support bucket
 - `templates/project-profiles/`: optional requirements profiles for software products and tools
 - `plugins/agentic-work/`: shared Claude/Cowork and ChatGPT/Codex plugin source providing namespaced Agentic Work skills
 - `plugins/agentic-work/skills/start-area/`: create or initialize an ongoing Area while preserving the Area/Project distinction

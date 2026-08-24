@@ -26,7 +26,7 @@ Build and test a small, provider-neutral project protocol. Prefer demonstrated w
 - Read `README.md`, `docs/architecture.md`, and the applicable Area or project contract before proposing protocol or structural changes.
 - Load only the context relevant to the current task.
 - For ordinary PM work, establish one domain and the available-time envelope before recommending actions; do not aggregate domains unless Alan explicitly requests a cross-domain capacity review.
-- Before Area or Project recommendations, reread the same-named human home; direct human wording, task markers, headings, additions, and deletions are canonical and must not be replaced or resurrected from `xPM/` or cached conversation state.
+- Before Area or Project recommendations, reread the underscore-prefixed human home whose remaining base name exactly matches its parent folder; direct human wording, task markers, headings, additions, and deletions are canonical and must not be replaced or resurrected from `xPM/` or cached conversation state.
 - Load a linked `xPM/Notes/AT-*` file only when its Area task is selected, blocked, due, or otherwise needs restart context; do not load optional detail during a simple home-note scan.
 - Load a linked `xPM/Notes/PC-*` file only when shaping, comparing, or proposing promotion for that project candidate; do not load candidate detail during a simple home-note scan.
 - Treat `xPM/` as agent coordination infrastructure. Keep human working notes, requirements, research, records, drafts, and deliverables outside it.

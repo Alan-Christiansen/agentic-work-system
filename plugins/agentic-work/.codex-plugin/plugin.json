@@ -1,6 +1,6 @@
 {
   "name": "agentic-work",
-  "version": "0.4.0+codex.20260824182450",
+  "version": "0.4.1+codex.20260824211215",
   "description": "Reusable, file-first workflows for Areas and projects following the Agentic Work System protocol.",
   "author": {
     "name": "Spectra Studio"

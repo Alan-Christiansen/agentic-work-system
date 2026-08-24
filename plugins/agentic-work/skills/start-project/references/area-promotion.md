@@ -7,7 +7,7 @@ Use this mode only when the user explicitly approves promotion of a named candid
 Read, in order:
 
 1. the Area folder's `AGENTS.md`, when present;
-2. the same-named Area home;
+2. the underscore-prefixed, folder-matching Area home;
 3. the candidate's linked `xPM/Notes/PC-*` note when one exists;
 4. Area Status and Handoff;
 5. Area Decisions only when needed to interpret an accepted promotion or origin rule;

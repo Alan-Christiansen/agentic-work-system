@@ -1,6 +1,6 @@
 {
   "name": "agentic-pm",
-  "version": "0.1.0",
+  "version": "0.1.1+codex.20260824211215",
   "description": "Capacity-aware project, Area, and portfolio management over human-owned plain files.",
   "author": {
     "name": "Spectra Studio"
@@ -15,7 +15,10 @@
     "composerIcon": "./assets/spectra-studio-placeholder.png",
     "logo": "./assets/spectra-studio-placeholder.png",
     "category": "Productivity",
-    "capabilities": ["Read", "Write"],
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
     "defaultPrompt": [
       "Review my managed portfolio in one domain.",
       "Help me plan a realistic week.",

@@ -8,7 +8,7 @@ This file defines reusable behavior. Personal facts, goals, business strategy, i
 
 ## Sources of truth
 
-- The same-named Area or Project home is the canonical human-facing record.
+- The underscore-prefixed Area or Project home whose remaining base name exactly matches its parent folder is the canonical human-facing record.
 - Direct human wording, task markers, headings, additions, deletions, dates, priorities, recurrence, and urgency tags are authoritative.
 - `xPM/Status.md` owns detailed agent-maintained current state; lifecycle and compact `next_action` and `blocked_by` mirrors remain synchronized with the home.
 - `xPM/Decisions.md` records accepted management decisions that could otherwise be reopened.
@@ -52,7 +52,7 @@ Start with the smallest useful stack:
 
 1. user-provided working preferences or routed personal context;
 2. the selected domain context;
-3. the same-named Area or Project home;
+3. the underscore-prefixed, folder-matching Area or Project home;
 4. `xPM/Status.md` and the latest `xPM/Handoff.md`;
 5. `xPM/Decisions.md` only when the task could affect or reopen an accepted management choice;
 6. a linked `xPM/Notes/AT-*` only for a selected, blocked, due, or otherwise relevant Area task;

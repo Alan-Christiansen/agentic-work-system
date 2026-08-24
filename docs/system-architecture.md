@@ -16,7 +16,7 @@ Connectors are bound to their source and destination nodes so they follow blocks
 
 ## Core rules
 
-- Same-named Area and Project homes are authoritative human PM surfaces.
+- Underscore-prefixed Area and Project homes whose remaining names match their parent folders are authoritative human PM surfaces.
 - `xPM/` supports agents and restartability but cannot override or resurrect deleted human state.
 - Reusable Agentic PM behavior lives in Git; personal PM configuration and live state remain in the user's knowledge workspace.
 - `xPM/` is shared coordination infrastructure rather than private storage owned by one PM role.
