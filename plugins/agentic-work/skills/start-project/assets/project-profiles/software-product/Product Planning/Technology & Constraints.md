@@ -1,11 +1,9 @@
 # Technology & Constraints
-
 ## Technology stack
 ## Platform, hosting, and delivery
 ## Data, privacy, and security
 ## Integrations and external services
 ## Constraints and open decisions
-
 > [!info]- What this file is for
 > **Purpose:** Capture product-level technical direction and constraints that affect what can be built or how it can be delivered.
 > **Technology stack:** Record selected or seriously considered languages, frameworks, platforms, and foundational services.

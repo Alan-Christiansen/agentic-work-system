@@ -10,6 +10,7 @@ A new software-project initialization succeeds only when:
 - that path resolves to the intended local Git root;
 - the repository contains `README.md`, `AGENTS.md`, and `CLAUDE.md`;
 - the README points back to the canonical project home;
+- `AGENTS.md` contains an exact derived copy of the canonical project's approved `## Agent role` content, marked as synchronized from the project home;
 - no detailed project status is duplicated into the repository.
 
 Allow exactly two modes for a required software repository: `create-stub` or `link-existing`. Do not accept `defer`, `later`, a proposed path, or “not created yet” as completion.
@@ -38,10 +39,11 @@ After approval:
 1. create the exact directory when absent;
 2. initialize local Git with the approved initial branch;
 3. instantiate `assets/repository/README.md`, `AGENTS.md`, and `CLAUDE.md` without unresolved placeholders;
-4. confirm the Git root and index-lock path;
-5. record the repository path in the project home;
-6. verify the README backlink;
-7. report the expected untracked stub files accurately.
+4. substitute the approved project role into `AGENTS.md` without changing its wording;
+5. confirm the Git root and index-lock path;
+6. record the repository path in the project home;
+7. verify the README backlink and exact role parity;
+8. report the expected untracked stub files accurately.
 
 Do not describe a new uncommitted stub as clean. No initial commit is part of this skill.
 
@@ -53,11 +55,11 @@ Resolve and verify the user-supplied path before any mutation:
 2. resolve and check the index-lock path;
 3. inspect `git --no-optional-locks status --porcelain=v1 --untracked-files=all`, branch, and HEAD when present;
 4. stop if the working tree has unrelated changes or the intended repository identity is uncertain;
-5. inspect `README.md`, `AGENTS.md`, and `CLAUDE.md` without overwriting them.
+5. inspect `README.md`, `AGENTS.md`, and `CLAUDE.md` without overwriting them, and compare any existing repository role copy with the canonical project role.
 
 If required files or the project-home backlink are missing, include their creation or minimal edit in the preflight. Preserve all existing repository guidance. `AGENTS.md` remains the provider-neutral authority; `CLAUDE.md` imports it and contains only demonstrated Claude-specific differences.
 
-After approval, write only the planned minimal repository files or backlink and the project-home `repo` value. Record `repo_remote` only when an existing verified remote is relevant and the user approves recording it; never create or change the remote.
+After approval, write only the planned minimal repository files, backlink, exact role synchronization, and project-home `repo` value. If role wording differs, the project home wins; stop and report drift unless synchronization was part of the approved mutation set. Record `repo_remote` only when an existing verified remote is relevant and the user approves recording it; never create or change the remote.
 
 ## Repository templates
 

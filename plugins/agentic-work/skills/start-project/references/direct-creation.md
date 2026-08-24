@@ -36,9 +36,10 @@ After approval:
 1. create the target folder only if absent;
 2. preserve existing work in place;
 3. instantiate the same-named home and `xPM/` records;
-4. add only the selected profile tree;
-5. create or link the approved repository for a software profile and write the two-way links;
-6. populate Status and Handoff with factual initialization state and the represented next action.
+4. write the explicitly approved project-specific role brief;
+5. add only the selected profile tree;
+6. create or link the approved repository for a software profile, write the two-way links, and synchronize the exact role brief into `AGENTS.md`;
+7. populate Status and Handoff with factual initialization state and the represented next action.
 
 Do not add a placeholder Decision. If no accepted decision needs a log entry, create only the Decisions frontmatter and `# Decisions` heading.
 

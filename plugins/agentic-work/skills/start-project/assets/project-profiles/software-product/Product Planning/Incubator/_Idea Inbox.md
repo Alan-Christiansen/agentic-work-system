@@ -1,5 +1,4 @@
 # Idea Inbox
-
 > [!info]- What this file is for
 > **Purpose:** Provide low-friction capture for undeveloped product ideas.
 > **Capture here:** Add short thoughts, possibilities, references, integrations, feature fragments, and questions without organizing or evaluating them first.

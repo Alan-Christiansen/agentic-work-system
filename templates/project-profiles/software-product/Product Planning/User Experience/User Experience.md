@@ -1,12 +1,10 @@
 # User Experience
-
 ## Experience principles
 ## Primary journey and flow
 ## Screens, states, and interactions
 ## Accessibility
 ## Supporting materials
 ## Open questions
-
 > [!info]- What this file is for
 > **Purpose:** Define how the product should feel, behave, and support people throughout the experience.
 > **Experience principles:** Record the qualities and design principles that should guide experience decisions across the product.

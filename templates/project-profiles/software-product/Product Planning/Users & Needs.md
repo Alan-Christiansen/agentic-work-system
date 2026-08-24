@@ -1,11 +1,9 @@
 # Users & Needs
-
 ## User groups
 ## Personas
 ## Situations and contexts
 ## Needs and desired outcomes
 ## Evidence and open questions
-
 > [!info]- What this file is for
 > **Purpose:** Define who the product serves, the situations they encounter, and the outcomes they need.
 > **User groups:** Identify broad types of users whose situations or needs differ in a meaningful way.

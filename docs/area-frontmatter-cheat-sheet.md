@@ -1,13 +1,13 @@
 # Area Frontmatter Cheat Sheet
 
-Use this when creating or updating an Agentic Work System v0.1 Area home. The schema is `schemas/area.schema.json`; the full rules are in `docs/area-contract.md`.
+Use this when creating or updating an Agentic Work System v0.2 Area home. The schema is `schemas/area.schema.json`; the full rules are in `docs/area-contract.md`.
 
 ## Copyable starting point
 
 ```yaml
 ---
 type: area
-schema_version: "0.1"
+schema_version: "0.2"
 area_id: area-name
 status: active
 domain: domain-id
@@ -27,7 +27,7 @@ Uncomment `income_role` when `pm_scope: managed`. Replace every placeholder befo
 | Field | Accepted value |
 | --- | --- |
 | `type` | `area` |
-| `schema_version` | `"0.1"` |
+| `schema_version` | `"0.2"` |
 | `area_id` | Globally unique lowercase kebab-case, normally domain-prefixed, such as `spectra-studio-business-admin` |
 | `status` | `active`, `paused`, or `retired` |
 | `domain` | Lowercase kebab-case |
@@ -45,3 +45,5 @@ Uncomment `income_role` when `pm_scope: managed`. Replace every placeholder befo
 Time available and current energy belong to the active PM conversation or task brief, not Area frontmatter.
 
 Only Alan or an explicitly authorized PM workflow changes Area lifecycle, `pm_scope`, or `income_role`.
+
+Frontmatter validation is necessary but not sufficient. The Area home must also contain an approved, non-empty `## Agent role` section with `### Primary role`, `### Expertise to apply`, and `### Working approach`.

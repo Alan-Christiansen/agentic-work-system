@@ -22,6 +22,7 @@ Require explicit confirmation of:
 - the exact Area and candidate;
 - approval to promote now, not merely candidate maturity or readiness;
 - project identity, objective, definition of done, classification, profile, and represented next action;
+- a project-specific role brief approved for the promoted project rather than copied blindly from the Area;
 - whether the Area-home proposal will be replaced with a compact Related Projects link or retained in another explicitly approved form;
 - the origin links to preserve.
 
@@ -45,11 +46,12 @@ After approval:
 
 1. create or link the required repository for a software profile;
 2. instantiate the project using the shared scaffold rules;
-3. add the approved Area and candidate origin links to the project;
-4. replace or revise the Area proposal exactly as approved;
-5. update the candidate note's promotion history when present;
-6. synchronize the Area and project handoffs with the same factual promotion outcome;
-7. leave both represented operational next actions unexecuted.
+3. add the approved project-specific role brief and synchronize it to repository `AGENTS.md` when applicable;
+4. add the approved Area and candidate origin links to the project;
+5. replace or revise the Area proposal exactly as approved;
+6. update the candidate note's promotion history when present;
+7. synchronize the Area and project handoffs with the same factual promotion outcome;
+8. leave both represented operational next actions unexecuted.
 
 If a write fails after a partial promotion, do not remove history or overwrite files to conceal it. Report the exact partial state and the smallest safe recovery action.
 

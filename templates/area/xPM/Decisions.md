@@ -7,9 +7,7 @@ updated: "YYYY-MM-DD"
 ## AD-001: Decision title
 - Date: YYYY-MM-DD
 - Status: accepted
-
 ### Decision
 State the accepted choice.
-
 ### Rationale
 Explain why it was chosen and what it constrains.

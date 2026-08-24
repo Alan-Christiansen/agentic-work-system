@@ -1,4 +1,4 @@
-# Area Contract v0.1
+# Area Contract v0.2
 
 ## Purpose
 
@@ -31,6 +31,7 @@ The Area home has the same base name as its parent folder and is the only requir
 - what healthy stewardship looks like;
 - important boundaries and ownership;
 - compact tasks and free-form proposed projects;
+- an approved agent-role brief defining the perspective, expertise, and working approach agents should apply;
 - relevant external work locations.
 
 Do not add a definition of done. An Area is retired only when the responsibility no longer exists or belongs elsewhere.
@@ -53,6 +54,7 @@ The Area-home `status`, `next_action`, and `blocked_by` fields mirror `xPM/Statu
 ### Human dashboard
 
 The same-named Area home is the canonical human-first working surface for bounded Area tasks and possible future projects. Alan may write, start, block, complete, drop, delete, rename, or revise its contents directly in Obsidian without invoking an agent.
+Generated Area Markdown uses tight heading spacing: no blank line immediately before or after a heading. Intentional spacing elsewhere remains untouched, and fenced examples retain their literal formatting.
 
 The Dashboard keeps tasks and proposed projects visibly separate without splitting the human workflow across files:
 
@@ -70,6 +72,12 @@ Free-form intent, context, links, and notes written in the human's own language.
 ```
 
 Every PM session rereads the same-named Area home before recommending work. Saved human wording, markers, headings, additions, and deletions are authoritative rather than conversation memory or older agent records.
+
+#### Agent role
+
+Every Area home contains a non-empty `## Agent role` section after `## Proposed Projects`, with `### Primary role`, `### Expertise to apply`, and `### Working approach` subsections. The role brief is explicitly approved during intake. It may describe professional perspectives, subject-matter knowledge, evidence standards, and useful methods, but it never grants credentials, tool access, decision rights, or authority beyond this contract and the current task.
+
+Agents may propose a provisional role brief from approved context, but must label it provisional and obtain approval before writing it. Treat the role as durable working guidance: apply it when relevant, keep uncertainty visible, and do not use it to overstate expertise or bypass specialist boundaries.
 
 #### Tasks
 
@@ -221,7 +229,7 @@ A cross-domain review may recommend which domain receives primary attention and 
 Promotion occurs only after Alan and the Agentic PM agree that now is the right time to start. The promotion workflow:
 
 1. confirms the desired outcome and finish line;
-2. creates a same-named project folder under `200 - Projects` using Project Contract v0.2;
+2. creates a same-named project folder under `200 - Projects` using Project Contract v0.3;
 3. selects explicit `pm_scope`, `income_role`, and `project_profile` values;
 4. links the project home back to the originating Area and PM Note ID when one exists;
 5. removes or replaces the Area-home proposal with a compact link according to the chosen history value;
@@ -234,9 +242,9 @@ Promotion does not imply `pm_scope: managed`; Alan chooses managed or excluded e
 
 Only Alan or an explicitly authorized PM workflow may change Area lifecycle, `pm_scope`, `income_role`, promote a proposal, or record a consequential decline. Moving an Area, creating a promoted project, or changing another Area or project remains propose-first unless the current task explicitly authorizes it.
 
-## Pilot acceptance
+## v0.2 acceptance
 
-Area Contract v0.1 is ready for broader use when:
+Area Contract v0.2 is ready for broader use when:
 
 1. one real ongoing responsibility operates from `300 - Areas` as a valid managed Area;
 2. a PM session stays inside one selected domain and fits its recommendation to the stated available time;
@@ -248,5 +256,6 @@ Area Contract v0.1 is ready for broader use when:
 8. a real project candidate is captured without entering the active portfolio;
 9. one approved candidate is manually promoted while preserving its origin;
 10. a fresh agent can reconstruct the distinctions from the saved files.
+11. the approved agent-role brief is present, non-empty, and shapes expertise without changing authority.
 
 Do not automate Area or project creation until these manual steps reveal a stable procedure.

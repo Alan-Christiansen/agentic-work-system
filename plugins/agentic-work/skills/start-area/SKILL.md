@@ -1,6 +1,6 @@
 ---
 name: start-area
-description: Create or initialize an Area Contract v0.1 record for an ongoing responsibility without a finish line, preserving existing work and separating Area tasks from inactive project candidates. Use when the user asks to start, create, initialize, or scaffold an Area. Do not use for finishable projects, ordinary work inside an initialized Area, project promotion, or silent conversion or deletion of an existing project.
+description: Create or initialize an Area Contract v0.2 record for an ongoing responsibility without a finish line, preserving existing work and separating Area tasks from inactive project candidates. Use when the user asks to start, create, initialize, or scaffold an Area. Do not use for finishable projects, ordinary work inside an initialized Area, project promotion, or silent conversion or deletion of an existing project.
 ---
 
 # Agentic Work: Start Area
@@ -24,10 +24,13 @@ Obtain or confirm these values before writing:
 - `pm_scope`: `managed` or `excluded`;
 - `income_role` when managed: `direct`, `enabling`, `none`, or `unknown`;
 - ongoing responsibility, observable healthy state, important boundaries, blockers, and one represented next action;
+- an approved agent role: primary role, specific expertise to apply, and working approach;
 - any initial Area tasks or proposed projects the user wants captured;
 - existing working files, asset locations, canonical records, or external work locations that must be preserved or linked.
 
-Ask for missing information in one compact intake when practical. Do not invent names, locations, classifications, responsibilities, healthy-state claims, boundaries, tasks, project candidates, blockers, or next actions. Do not add a definition of done.
+Ask for missing information in one compact intake when practical. The skill may draft a clearly provisional role brief from approved context, but must obtain explicit approval before writing it. Do not invent names, locations, classifications, responsibilities, healthy-state claims, boundaries, tasks, project candidates, blockers, next actions, or a final role. Do not add a definition of done.
+
+The role shapes perspective and methods only. It does not grant credentials, tool access, decision rights, or authority beyond the contract and current task.
 
 `active` means the responsibility exists; it does not mean the Area should consume primary focus every day. `pm_scope: managed` makes the Area eligible only within its own domain and does not authorize cross-domain portfolio loading.
 
@@ -40,7 +43,7 @@ Before any mutation:
 3. inspect the destination for files, case variants, symlinks, same-named notes, generic dashboard notes that could be the intended home, `xPM/`, and filename or folder collisions;
 4. preserve existing working files and identify every file to create, preserve, rename, move, or edit;
 5. stop when the same-named home may already be an initialized Area, when ownership is uncertain, or when a move or merge could duplicate or lose material;
-6. present one compact preflight summary containing the Area identity, classification, exact paths, initial dashboard content, preservation or normalization effects, provisional values, collisions, and stop boundaries;
+6. present one compact preflight summary containing the Area identity, classification, exact paths, initial dashboard content, complete proposed role brief, preservation or normalization effects, provisional values, collisions, and stop boundaries;
 7. obtain explicit approval for that exact plan.
 
 If the user changes the parent, identity, classification, or mutation set after the summary, refresh the affected preflight and approval.
@@ -61,8 +64,9 @@ Area Name/
 ```
 
 Preserve existing working files. Never overwrite a same-named home or `xPM` record merely because a template exists. Human working notes, research, records, drafts, deliverables, assets, and domain-meaningful folders remain outside `xPM/`.
+Format generated Markdown with no blank line immediately before or after a heading. Preserve intentional spacing elsewhere and do not alter heading spacing inside fenced examples.
 
-Keep `## Tasks` and `## Proposed Projects` separate in the Area home. Preserve user wording and task markers exactly when supplied. Empty sections are valid; never add an empty checkbox or a placeholder project idea. Proposed projects remain inactive and outside the active project portfolio.
+Keep `## Tasks` and `## Proposed Projects` separate in the Area home. Add the approved `## Agent role` section after `## Proposed Projects`, with non-empty `### Primary role`, `### Expertise to apply`, and `### Working approach` subsections. Preserve user wording and task markers exactly when supplied. Empty sections are valid; never add an empty checkbox or a placeholder project idea. Proposed projects remain inactive and outside the active project portfolio.
 
 Do not create `xPM/Notes/` or per-item PM notes during initialization unless approved initial content already earns specific support. Do not add a placeholder Decision. When no accepted PM-governance decision needs a log entry, create only the Decisions frontmatter and `# Decisions` heading.
 
@@ -91,6 +95,7 @@ Before reporting success:
 - verify dates, frontmatter values, lifecycle, blockers, and next actions;
 - verify no empty local task checkbox or placeholder proposed project remains;
 - verify supplied human tasks, proposals, working files, and assets remain present with their wording and markers preserved;
+- verify the complete approved role brief is present, non-empty, and does not imply authority or credentials;
 - verify optional PM Notes were not created without earned, approved content;
 - inspect the final diffs and Git status, distinguishing intended changes from unrelated pre-existing changes;
 - confirm no project promotion, project conversion, dependency, remote, commit, publication, deployment, purchase, message, installation, or represented next action was performed.
@@ -99,7 +104,7 @@ Replace `xPM/Handoff.md` with the contract's eight-part restart packet. Report c
 
 ## Authority boundaries
 
-- Do not choose or change Area lifecycle, PM scope, income role, responsibility, healthy state, boundaries, blockers, tasks, project candidates, or next action without explicit approval.
+- Do not choose or change Area lifecycle, PM scope, income role, responsibility, healthy state, boundaries, blockers, tasks, project candidates, agent role, or next action without explicit approval.
 - Do not create, promote, convert, move, or delete a project through this skill.
 - Do not add a definition of done, `project_profile`, repository, or software requirements profile to an Area.
 - Do not execute Area tasks, shape or promote project candidates, or perform the represented next action.

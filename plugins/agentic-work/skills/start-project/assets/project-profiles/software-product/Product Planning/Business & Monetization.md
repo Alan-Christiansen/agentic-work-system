@@ -1,11 +1,9 @@
 # Business & Monetization
-
 ## Customer and value exchange
 ## Monetization options
 ## Pricing
 ## Costs and constraints
 ## Evidence and open questions
-
 > [!info]- What this file is for
 > **Purpose:** Explore how the product could create sustainable business value without treating early assumptions as settled business facts.
 > **Customer and value exchange:** Identify who uses the product, who might pay, who benefits, and what outcome makes the exchange worthwhile. The customer, user, and beneficiary may be different people or organizations.

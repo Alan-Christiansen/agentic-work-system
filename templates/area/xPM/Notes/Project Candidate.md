@@ -6,7 +6,6 @@ maturity: captured
 updated: "YYYY-MM-DD"
 ---
 # Project idea
-
 - Desired outcome:
 - Why it may matter:
 - Rough boundary:

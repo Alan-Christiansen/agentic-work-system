@@ -6,26 +6,16 @@ updated: YYYY-MM-DD
 ---
 # Product Requirements
 ## Problem
-
 ## Intended users
-
 ## Desired outcome
-
 ## Scope
 ### In
-
 ### Out
-
 ## Requirements
-
 ## Success evidence
-
 ## Constraints
-
 ## Open questions
-
 ## Planning sources
-
 | Source | Load when |
 |---|---|
 | [[Product Planning/Users & Needs\|Users & Needs]] | Evaluating users, situations, needs, personas, or supporting evidence |

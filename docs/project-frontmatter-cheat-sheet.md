@@ -1,13 +1,13 @@
 # Project Frontmatter Cheat Sheet
 
-Use this when creating or updating an Agentic Work System v0.2 project home. The machine-readable source is `schemas/project.schema.json`; the full human-readable rules are in `docs/project-contract.md`.
+Use this when creating or updating an Agentic Work System v0.3 project home. The machine-readable source is `schemas/project.schema.json`; the full human-readable rules are in `docs/project-contract.md`.
 
 ## Copyable starting point
 
 ```yaml
 ---
 type: project
-schema_version: "0.2"
+schema_version: "0.3"
 project_id: project-name
 status: planned
 domain: domain-id
@@ -28,7 +28,7 @@ Uncomment `income_role` when `pm_scope` is `managed`. Replace every placeholder 
 | Field             | Accepted value                                    | Meaning                                                                   |     |
 | ----------------- | ------------------------------------------------- | ------------------------------------------------------------------------- | --- |
 | `type`            | `project`                                         | Fixed value identifying a project home.                                   |     |
-| `schema_version`  | `"0.2"`                                           | Fixed contract version. Keep it quoted.                                   |     |
+| `schema_version`  | `"0.3"`                                           | Fixed contract version. Keep it quoted.                                   |     |
 | `project_id`      | Lowercase kebab-case, such as `website-refresh`   | Stable globally unique identifier. Do not change it when the display name changes. |     |
 | `status`          | See lifecycle values below                        | Current project lifecycle.                                                |     |
 | `domain`          | Lowercase kebab-case, such as `tech-and-systems`  | Stable vault-aligned domain identifier.                                   |     |
@@ -98,3 +98,6 @@ Keep these synchronized:
 - Project-home `status` and `xPM/Status.md` status
 - Project-home `next_action`, the detailed Status next action, and the latest Handoff recommendation
 - Project-home `blocked_by` and the detailed Status blockers
+- Project-home `## Agent role` and the derived repository `AGENTS.md` role copy, when a repository is present
+
+Frontmatter validation is necessary but not sufficient. The project home must also contain an approved, non-empty `## Agent role` section with `### Primary role`, `### Expertise to apply`, and `### Working approach`.

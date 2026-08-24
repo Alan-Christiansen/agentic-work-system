@@ -1,10 +1,10 @@
-# Project Contract v0.2
+# Project Contract v0.3
 
 ## Purpose
 
 This contract defines the minimum durable state required for a human and multiple AI agents to understand, continue, and review a project without relying on shared conversation history.
 
-It remains intentionally small. v0.2 adds only the information and folders demonstrated as necessary for portfolio management and repeatable project setup. Project profiles may add files or properties, but they must preserve this common core.
+It remains intentionally small. v0.3 adds an approved agent-role brief and, for repository-backed projects, an exact synchronized repository copy. Project profiles may add files or properties, but they must preserve this common core.
 
 This contract applies only to finishable projects. Ongoing responsibilities belong under `300 - Areas` and use `area-contract.md`. A possible future project captured in an Area does not become a project until Alan approves its promotion.
 
@@ -12,7 +12,7 @@ This contract applies only to finishable projects. Ongoing responsibilities belo
 
 | Information | Canonical home |
 |---|---|
-| Objective, scope, ownership, lifecycle, and cross-tool locations | Project home in Obsidian |
+| Objective, scope, ownership, lifecycle, agent role, and cross-tool locations | Project home in Obsidian |
 | Current outcome, progress, blockers, and next action | `xPM/Status.md` |
 | Accepted PM-governance choices that constrain future work | `xPM/Decisions.md` |
 | Restart state between people, agents, or conversations | `xPM/Handoff.md` |
@@ -21,7 +21,7 @@ This contract applies only to finishable projects. Ongoing responsibilities belo
 
 ## Required project files
 
-Every v0.2 project retained in `200 - Projects` has one same-named human dashboard, one PM support folder, and—when required by its profile—one profile extension:
+Every v0.3 project retained in `200 - Projects` has one same-named human dashboard, one PM support folder, and—when required by its profile—one profile extension:
 
 ```text
 Project Name/
@@ -48,6 +48,7 @@ The project home note has the same base name as its parent project folder: `Proj
 The project home is the only required human-facing PM file. It combines the human dashboard with the stable definition, boundaries, ownership, and navigation point. Detailed requirements belong in the applicable project-profile document. It holds:
 
 - directly editable project tasks;
+- an approved agent-role brief;
 - objective;
 - definition of done;
 - important boundaries;
@@ -57,6 +58,13 @@ The project home is the only required human-facing PM file. It combines the huma
 Human working notes, research, plans, drafts, requirements, documents, deliverables, and domain-meaningful folders may live beside the project home. Do not place them in `xPM/` merely because an agent created or uses them.
 
 Do not turn the project home into a running log. Detailed agent-maintained state belongs in `xPM/Status.md`.
+Generated project and repository-guidance Markdown uses tight heading spacing: no blank line immediately before or after a heading. Intentional spacing elsewhere remains untouched, and fenced examples retain their literal formatting.
+
+### Agent role
+
+Every project home contains a non-empty `## Agent role` section after `## Tasks`, with `### Primary role`, `### Expertise to apply`, and `### Working approach` subsections. The role brief is explicitly approved during intake. It may define professional perspectives, subject-matter knowledge, evidence standards, and useful methods, but it never grants credentials, tool access, decision rights, or authority beyond this contract and the current task.
+
+Agents may propose a provisional role brief from approved context, but must label it provisional and obtain approval before writing it. A project promoted from an Area receives a project-specific brief; do not copy the Area role blindly.
 
 ### Project tasks
 
@@ -232,10 +240,12 @@ repository/
 ```
 
 - `README.md` explains the repository purpose and points to the Obsidian project home.
-- `AGENTS.md` contains concise, provider-neutral repository instructions.
+- `AGENTS.md` contains concise, provider-neutral repository instructions and an exact copy of the canonical project's `## Agent role` content, clearly marked as synchronized from the project home.
 - `CLAUDE.md` imports `AGENTS.md` and adds only demonstrated Claude-specific differences.
 
-Do not duplicate the full project status or portfolio state into the repository. Link to the project home.
+The project home remains canonical. If the repository role copy differs, stop role-dependent work, report the drift, and synchronize only with authorization to edit the affected files. Do not merge conflicting wording or let repository guidance overwrite the project home.
+
+Do not duplicate the full project status or portfolio state into the repository. The role brief is the narrow, intentional exception that makes the approved perspective available to repository-only agents. Link all other durable state to the project home.
 
 ## Context-loading contract
 
@@ -298,7 +308,7 @@ Before handing off meaningful work:
 - ensure the next action is concrete;
 - leave unrelated files untouched.
 
-## v0.2 acceptance test
+## v0.3 acceptance test
 
 The contract passes when:
 
@@ -310,5 +320,7 @@ The contract passes when:
 6. the portfolio inventory can classify archive and deletion candidates without scaffolding them first;
 7. the manual workflow reveals no missing field that would block prioritization.
 8. a managed project in another domain remains unloaded unless Alan explicitly requests cross-domain capacity review.
+9. every project has a complete approved role brief that does not expand agent authority.
+10. every repository-backed project has an exact derived role copy in `AGENTS.md`, and validation detects drift from the canonical project home.
 
 Run this test during the first read-only portfolio inventory and migration pilot before building a scaffolding skill.

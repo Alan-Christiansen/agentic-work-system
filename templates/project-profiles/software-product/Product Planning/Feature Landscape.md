@@ -1,12 +1,10 @@
 # Feature Landscape
-
 ## MVP
 ## Future versions
 ### V2
 ### V3
 ## Deferred
 ## Out of scope
-
 > [!info]- What this file is for
 > **Purpose:** Show which capabilities belong to the working product plan and when they are expected.
 > **MVP:** Define the smallest coherent first release that can deliver the intended product outcome.

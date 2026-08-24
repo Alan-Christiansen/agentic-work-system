@@ -1,6 +1,6 @@
 ---
 name: start-project
-description: Create a Project Contract v0.2 project directly or promote an explicitly approved Area candidate, preserving existing work and applying profile-specific setup. Use when the user asks to start, initialize, scaffold, or promote a project. Do not use for ordinary work inside an existing initialized project, portfolio classification, or standalone repository creation.
+description: Create a Project Contract v0.3 project directly or promote an explicitly approved Area candidate, preserving existing work and applying profile-specific setup. Use when the user asks to start, initialize, scaffold, or promote a project. Do not use for ordinary work inside an existing initialized project, portfolio classification, or standalone repository creation.
 ---
 
 # Agentic Work: Start Project
@@ -30,11 +30,14 @@ Obtain or confirm these values before writing:
 - `income_role` when managed: `direct`, `enabling`, `none`, or `unknown`;
 - `project_profile`: `general`, `software-product`, or `software-tool`;
 - objective, observable definition of done, important boundaries, blockers, and one represented next action;
+- an approved agent role: primary role, specific expertise to apply, and working approach;
 - whether the public name is final or provisional while the internal identity remains stable;
 - for Area promotion, the exact Area home and candidate origin;
 - for either software profile, repository mode and exact local path.
 
-Ask for missing information in one compact intake when practical. Do not invent public claims, names, locations, classifications, objectives, finish lines, or next actions.
+Ask for missing information in one compact intake when practical. The skill may draft a clearly provisional role brief from approved context, but must obtain explicit approval before writing it. Do not invent public claims, names, locations, classifications, objectives, finish lines, next actions, or a final role.
+
+The role shapes perspective and methods only. It does not grant credentials, tool access, decision rights, or authority beyond the contract and current task.
 
 ## Apply the profile
 
@@ -57,7 +60,7 @@ Before any mutation:
 3. inspect the destination for files, case variants, symlinks, same-named notes, profile documents, `xPM/`, profile-provided folders, and filename or folder collisions;
 4. for an existing repository, complete the read-only Git preflight in the repository reference;
 5. identify every file to create, preserve, rename, or edit and every Git operation proposed;
-6. present one compact preflight summary containing the mode, identity, profile, exact paths, repository action, promotion effects, provisional values, collisions, and stop boundaries;
+6. present one compact preflight summary containing the mode, identity, profile, complete proposed role brief, exact paths, repository action and role-synchronization effect, promotion effects, provisional values, collisions, and stop boundaries;
 7. obtain explicit approval for that exact plan.
 
 If the user changes the path, profile, repository mode, promotion origin, or mutation set after the summary, refresh the affected preflight and approval. Do not treat general permission to start a project as permission to use an unreviewed repository target.
@@ -78,7 +81,8 @@ Project Name/
     └── Handoff.md
 ```
 
-Preserve existing working files. Never overwrite a same-named note, profile document, `xPM` record, repository file, or asset merely because a template exists. Remove template guidance, placeholder decisions, and placeholder prose from the instantiated files. An empty `## Tasks` section is valid; never add an empty local checkbox.
+Preserve existing working files. Add the approved `## Agent role` section after `## Tasks`, with non-empty `### Primary role`, `### Expertise to apply`, and `### Working approach` subsections. Never overwrite a same-named note, profile document, `xPM` record, repository file, or asset merely because a template exists. Remove template guidance, placeholder decisions, and placeholder prose from the instantiated files. An empty `## Tasks` section is valid; never add an empty local checkbox.
+Format generated Markdown with no blank line immediately before or after a heading. Preserve intentional spacing elsewhere and do not alter heading spacing inside fenced examples.
 
 Record provisional public naming visibly while retaining the stable internal folder name, home filename, and `project_id`.
 
@@ -96,6 +100,7 @@ The project home owns stable identity and canonical lifecycle. `xPM/Status.md` o
 - Handoff's recommended next action;
 - the applicable local calendar date under the contract's timezone rule;
 - project-home `repo` and the repository README backlink when a repository is present.
+- project-home `## Agent role` and the exact derived role copy in repository `AGENTS.md` when a repository is present.
 
 Create no accepted Decision entry unless the user actually accepted a choice worth preserving. Do not leave the template's example decision in place.
 
@@ -109,9 +114,10 @@ Before reporting success:
 - verify every required file exists and no forbidden profile file was added;
 - verify dates, frontmatter values, link targets, lifecycle, blockers, and next actions;
 - verify no empty local task placeholder exists;
+- verify the complete approved role brief is present, non-empty, and does not imply authority or credentials;
 - verify existing working files and meaningful asset locations remain present;
 - for promotion, verify the Area, candidate note when present, and project preserve their origin links and do not represent the project as an inactive proposal;
-- for software profiles, verify the local Git root, absent index lock, required stub files, Obsidian `repo` path, and repository backlink;
+- for software profiles, verify the local Git root, absent index lock, required stub files, Obsidian `repo` path, repository backlink, and exact role parity between the project home and repository `AGENTS.md`; stop and report drift rather than choosing a side;
 - inspect the final diffs and Git status, distinguishing intended changes from unrelated pre-existing changes;
 - confirm no remote, dependency, commit, publication, deployment, purchase, message, installation, or represented next action was performed.
 
@@ -119,7 +125,7 @@ Replace `xPM/Handoff.md` with the contract's eight-part restart packet. Report c
 
 ## Authority and portability boundaries
 
-- Do not choose or change lifecycle, PM scope, income role, profile, objective, definition of done, promotion, public name, repository path, or accepted decisions without explicit approval.
+- Do not choose or change lifecycle, PM scope, income role, profile, objective, definition of done, promotion, public name, agent role, repository path, or accepted decisions without explicit approval.
 - Do not create or link a repository until its exact target appears in an approved preflight.
 - Do not add dependencies, accounts, remotes, commits, publications, deployments, DNS changes, purchases, messages, or installation changes.
 - Do not execute tasks or next actions represented by the Area, candidate, or project.

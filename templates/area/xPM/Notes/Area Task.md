@@ -5,7 +5,6 @@ item_id: AT-001
 updated: "YYYY-MM-DD"
 ---
 # Task title
-
 - Blocked by:
 - Follow up:
 - Resume when:
