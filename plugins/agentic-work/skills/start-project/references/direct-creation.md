@@ -13,6 +13,8 @@ Read only:
 
 Do not run a portfolio inventory or inspect sibling projects merely to choose metadata.
 
+An explicitly supplied stewardship Area may be read only far enough to verify its exact home path and any product-direction links the user approved for this project. This is a relationship link, not candidate provenance or promotion. Do not search for a possible Area, infer one from similar naming, or rewrite Area state during direct creation.
+
 ## Preflight
 
 Resolve the parent folder and calculate both `Project Name/` and `Project Name/_Project Name.md`. Confirm the folder and home note use the approved stable internal identity even when the eventual public name is provisional. The leading underscore is structural; the remainder of the home base name must exactly match the folder.
@@ -39,10 +41,11 @@ After approval:
 4. write the explicitly approved project-specific role brief;
 5. add only the selected profile tree;
 6. create or link the approved repository for a software profile, write the two-way links, and synchronize the exact role brief into `AGENTS.md`;
-7. populate Status and Handoff with factual initialization state and the represented next action.
+7. when explicitly approved, add a relationship link to the stewardship Area and relevant canonical Area product-direction notes without copying their content or using promotion language;
+8. populate Status and Handoff with factual initialization state and the represented next action.
 
 Do not add a placeholder Decision. If no accepted decision needs a log entry, create only the Decisions frontmatter and `# Decisions` heading.
 
 ## Direct-creation verification
 
-Confirm the new project has no Area or candidate origin unless the user explicitly supplied a non-promotion provenance link. Confirm pre-existing files remain byte-for-byte present except for specifically approved reference updates.
+Confirm the new project has no candidate or promotion origin. When the user supplied a stewardship Area, confirm the link is represented as an ongoing relationship, the Area itself was not mutated, and no Area-owned direction was copied into the project. Confirm pre-existing files remain byte-for-byte present except for specifically approved reference updates.

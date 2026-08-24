@@ -27,6 +27,7 @@ Obtain or confirm these values before writing:
 - an approved agent role: primary role, specific expertise to apply, and working approach;
 - any initial Area tasks or proposed projects the user wants captured;
 - existing working files, asset locations, canonical records, or external work locations that must be preserved or linked.
+- whether the optional `product-venture` pack is appropriate and explicitly requested when the Area continuously stewards a software product venture.
 
 Ask for missing information in one compact intake when practical. The skill may draft a clearly provisional role brief from approved context, but must obtain explicit approval before writing it. Do not invent names, locations, classifications, responsibilities, healthy-state claims, boundaries, tasks, project candidates, blockers, next actions, or a final role. Do not add a definition of done.
 
@@ -50,6 +51,8 @@ If the user changes the parent, identity, classification, or mutation set after 
 
 Do not scan sibling Areas or broad vault content merely to choose metadata. Do not treat approval to create an Area as approval to delete or convert a similarly named project.
 
+The base Area is the default. Offer the optional `product-venture` pack only when the responsibility is ongoing stewardship of a software product venture and the durable work is expected to include users and needs, product-wide feature direction, business and monetization, or incubated possibilities. Include every pack file and folder in the exact preflight write set. Do not add an `area_profile` or other schema field to represent the choice.
+
 ## Instantiate the Area
 
 Use the packaged templates under `assets/area/`, replacing every placeholder with approved state. The result contains:
@@ -65,6 +68,8 @@ Area Name/
 
 Name the home with one leading underscore followed by the exact parent-folder name. Preserve existing working files. Never overwrite an underscore-prefixed or legacy unprefixed home candidate or `xPM` record merely because a template exists. Human working notes, research, records, drafts, deliverables, assets, and domain-meaningful folders remain outside `xPM/`.
 Format generated Markdown with no blank line immediately before or after a heading. Preserve intentional spacing elsewhere and do not alter heading spacing inside fenced examples.
+
+When the approved write set includes the `product-venture` pack, instantiate only `assets/area-packs/product-venture/` beside the Area home. Add a compact `## Product direction` section to the Area home that links each instantiated pack note using paths resolved for that Area. The Area home remains the dashboard; the linked notes own the deeper durable venture material. Never add the pack by default, partially instantiate it, or infer it from an Area name alone.
 
 Keep `## Tasks` and `## Proposed Projects` separate in the Area home. Add the approved `## Agent role` section after `## Proposed Projects`, with non-empty `### Primary role`, `### Expertise to apply`, and `### Working approach` subsections. Preserve user wording and task markers exactly when supplied. Empty sections are valid; never add an empty checkbox or a placeholder project idea. Proposed projects remain inactive and outside the active project portfolio.
 
@@ -97,6 +102,7 @@ Before reporting success:
 - verify supplied human tasks, proposals, working files, and assets remain present with their wording and markers preserved;
 - verify the complete approved role brief is present, non-empty, and does not imply authority or credentials;
 - verify optional PM Notes were not created without earned, approved content;
+- verify an approved Area pack is complete and linked from the Area home, or verify no Area-pack files were added when none was approved;
 - inspect the final diffs and Git status, distinguishing intended changes from unrelated pre-existing changes;
 - confirm no project promotion, project conversion, dependency, remote, commit, publication, deployment, purchase, message, installation, or represented next action was performed.
 

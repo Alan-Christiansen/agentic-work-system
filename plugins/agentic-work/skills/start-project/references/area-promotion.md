@@ -40,6 +40,8 @@ The Area home must link to the promoted project outside the inactive Proposed Pr
 
 Preserve the Area's lifecycle, blockers, operational tasks, and next action unless the user separately approves a factual synchronization change. Promotion of one candidate does not authorize execution or reprioritization of an Area task.
 
+When the selected profile is `software-product`, inspect the originating Area only for approved, relevant product-direction notes. Link those canonical notes from the project PRD when they inform the bounded release. Never copy, move, or summarize Area-owned users and needs, product-wide feature direction, business and monetization, or incubator material into the project scaffold.
+
 ## Write
 
 After approval:
@@ -66,3 +68,4 @@ Verify that:
 - Area lifecycle, blockers, tasks, and next action remain internally synchronized;
 - project lifecycle, blockers, and next action remain internally synchronized;
 - no repository, external service, or represented next action beyond the approved initialization plan was created or performed.
+- any relevant Area product-direction material remains canonical in the Area and is linked rather than duplicated in the project.

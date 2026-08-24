@@ -5,9 +5,9 @@ status: draft
 updated: YYYY-MM-DD
 ---
 # Product Requirements
-## Problem
-## Intended users
-## Desired outcome
+## Release
+## Problem and intended users
+## Release outcome
 ## Scope
 ### In
 ### Out
@@ -15,18 +15,13 @@ updated: YYYY-MM-DD
 ## Success evidence
 ## Constraints
 ## Open questions
-## Planning sources
-| Source | Load when |
-|---|---|
-| [[Product Planning/Users & Needs\|Users & Needs]] | Evaluating users, situations, needs, personas, or supporting evidence |
-| [[Product Planning/Feature Landscape\|Feature Landscape]] | Planning MVP, later versions, deferred work, or product boundaries |
-| [[Product Planning/User Experience/User Experience\|User Experience]] | Making experience, flow, accessibility, interaction, or content decisions |
-| [[Product Planning/Business & Monetization\|Business & Monetization]] | Evaluating commercial value, monetization, pricing, costs, or evidence |
-| [[Product Planning/Technology & Constraints\|Technology & Constraints]] | A product decision depends on technical direction or feasibility |
-| [[Product Planning/Incubator/_Idea Inbox\|Idea Inbox]] | Capturing or intentionally reviewing undeveloped ideas |
-| [[Product Planning/Incubator/What-Ifs & Future Capabilities\|What-Ifs & Future Capabilities]] | Exploring future product directions outside the working plan |
+## Release planning
+- [[Product Planning/User Experience/User Experience|User Experience]]
+- [[Product Planning/Technology & Constraints|Technology & Constraints]]
+## Related product direction
 
 > [!info]- What this file is for
-> **Purpose:** Define the product at a concise level and route deeper planning work to its canonical notes.
-> **Put here:** The problem, intended users, desired outcome, approved scope, observable requirements, success evidence, constraints, and unresolved product questions.
-> **Keep elsewhere:** Deeper user, feature, experience, business, technical, and speculative material belongs in the linked planning notes.
+> **Purpose:** Define one bounded software release and route its release-specific planning to the two linked project notes.
+> **Put here:** Name the release or milestone, the problem and users it addresses, its observable outcome, approved in-and-out scope, requirements, success evidence, constraints, and open questions.
+> **Related product direction:** When the project is stewarded by a product-venture Area, link its Area home and only the Area notes that materially inform this release. Remove this section when no Area was supplied. Do not copy Area material into the project.
+> **Keep elsewhere:** Release-specific experience and technical planning belong in the linked project notes. Durable users and needs, feature landscape, business and monetization, and speculative ideas belong in the related product-venture Area when one exists.

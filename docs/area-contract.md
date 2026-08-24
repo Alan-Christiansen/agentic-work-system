@@ -21,7 +21,7 @@ Area Name/
     └── Notes/                 # optional per-item PM support
 ```
 
-The canonical templates are under `templates/area/`.
+The canonical base templates are under `templates/area/`. Optional approved working-material packs are under `templates/area-packs/`; they extend an Area without changing its contract or frontmatter schema.
 
 ### Area home
 
@@ -37,6 +37,21 @@ The Area home is named with one leading underscore followed by the exact parent-
 Do not add a definition of done. An Area is retired only when the responsibility no longer exists or belongs elsewhere.
 
 Human working notes, records, research, documents, and domain-meaningful folders may live beside the Area home. The contract reserves only the underscore-prefixed, folder-matching home and `xPM/`; it does not force working material into a generic Notes folder.
+### Optional product-venture pack
+An Area that continuously stewards a software product venture may receive the complete `product-venture` pack after its exact files are included in the approved creation plan. The base Area remains the default, and pack selection does not add an `area_profile` or other schema field.
+
+```text
+Area Name/
+├── Product Direction/
+│   ├── Users & Needs.md
+│   ├── Feature Landscape.md
+│   └── Business & Monetization.md
+└── Incubator/
+    ├── _Idea Inbox.md
+    └── What-Ifs & Future Capabilities.md
+```
+
+These notes own durable venture direction that can outlive any one release. The Area home links them through a compact Product direction section. Release projects link to relevant Area notes rather than copying users and needs, the product-wide feature landscape, business and monetization, or speculative ideas. Do not partially instantiate the pack or add it merely because an Area has a product-like name.
 
 ### PM support folder
 

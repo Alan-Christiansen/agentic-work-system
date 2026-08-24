@@ -11,4 +11,4 @@
 > **Situations and contexts:** Capture when, where, and under what conditions someone reaches for the product.
 > **Needs and desired outcomes:** Describe the help users need and the change they hope to experience.
 > **Evidence and open questions:** Separate observations or research from assumptions that still need investigation.
-> **Keep elsewhere:** Feature definitions belong in [[Feature Landscape]]; interface and accessibility decisions belong in [[User Experience]].
+> **Keep elsewhere:** Product-wide feature direction belongs in [[Feature Landscape]]; release-specific interface and accessibility decisions belong in the relevant software-product project.

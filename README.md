@@ -39,7 +39,8 @@ This path belongs to the current local installation and must not become a requir
 - `schemas/area.schema.json`: current machine-readable Area-home schema
 - `templates/project/`: minimum project scaffold
 - `templates/area/`: minimum managed-Area scaffold with one underscore-prefixed folder-matching human dashboard and an `xPM/` support bucket
-- `templates/project-profiles/`: optional requirements profiles for software products and tools
+- `templates/area-packs/`: optional, explicitly approved working-material packs for Areas, including durable product-venture direction
+- `templates/project-profiles/`: proportional requirements profiles; software-product projects receive a bounded-release PRD, UX note, technical-constraints note, and contextual UX assets
 - `plugins/agentic-work/`: shared Claude/Cowork and ChatGPT/Codex plugin source providing namespaced Agentic Work skills
 - `plugins/agentic-work/skills/start-area/`: create or initialize an ongoing Area while preserving the Area/Project distinction
 - `plugins/agentic-work/skills/start-project/`: directly create a project or promote an approved Area candidate with profile-specific scaffolding and repository setup

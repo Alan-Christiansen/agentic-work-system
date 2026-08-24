@@ -12,4 +12,4 @@
 > **V2 and V3:** Group likely post-MVP capabilities without allowing them to expand the MVP.
 > **Deferred:** Keep legitimate product features that are intentionally postponed but not rejected.
 > **Out of scope:** Record deliberate exclusions so tempting ideas do not repeatedly re-enter the plan.
-> **Keep elsewhere:** Undeveloped someday-maybe ideas belong in the [[_Idea Inbox]] or [[What-Ifs & Future Capabilities]]; implementation tasks belong in the companion repository.
+> **Keep elsewhere:** Undeveloped someday-maybe ideas belong in the [[../Incubator/_Idea Inbox|Idea Inbox]] or [[../Incubator/What-Ifs & Future Capabilities|What-Ifs & Future Capabilities]]; implementation tasks belong in the companion repository.

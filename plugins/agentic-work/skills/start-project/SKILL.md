@@ -32,6 +32,7 @@ Obtain or confirm these values before writing:
 - objective, observable definition of done, important boundaries, blockers, and one represented next action;
 - an approved agent role: primary role, specific expertise to apply, and working approach;
 - whether the public name is final or provisional while the internal identity remains stable;
+- for direct creation, any explicitly supplied stewardship Area that should be linked without representing the project as a promotion;
 - for Area promotion, the exact Area home and candidate origin;
 - for either software profile, repository mode and exact local path.
 
@@ -49,7 +50,9 @@ The role shapes perspective and methods only. It does not grant credentials, too
 
 For either software profile, read [references/repository-setup.md](references/repository-setup.md). “Repository not created yet” is not a successful software-project initialization result.
 
-Use only the matching profile template tree under `assets/project-profiles/`. The software-product profile includes its demonstrated Product Planning scaffold; the software-tool profile includes only its Technical Brief. Do not mix profile files or create an empty profile extension for `general`.
+Use only the matching profile template tree under `assets/project-profiles/`. The software-product profile defines one bounded release through `Product Requirements.md`, release-specific User Experience and Technology & Constraints notes, and a contextual User Experience `Assets/` folder. The software-tool profile includes only its Technical Brief. Do not mix profile files or create an empty profile extension for `general`.
+
+A software-product project is valid without a stewardship Area. Keep its PRD minimally complete from the approved project intake. When an Area is explicitly supplied in direct creation or is the approved promotion origin, link the project to that Area and link only the Area product-direction notes that materially inform the release. Never copy durable users and needs, product-wide feature direction, business and monetization, or incubator material into the project.
 
 ## Preflight and approval
 
@@ -74,7 +77,7 @@ Project Name/
 ├── _Project Name.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
-├── Product Planning/        # software-product only
+├── Product Planning/        # software-product only: release UX and technical constraints
 └── xPM/
     ├── Status.md
     ├── Decisions.md
@@ -117,6 +120,8 @@ Before reporting success:
 - verify the complete approved role brief is present, non-empty, and does not imply authority or credentials;
 - verify existing working files and meaningful asset locations remain present;
 - for promotion, verify the Area, candidate note when present, and project preserve their origin links and do not represent the project as an inactive proposal;
+- verify any direct-creation stewardship Area link was explicitly supplied, is not described as promotion provenance, and does not duplicate Area-owned product direction;
+- for a software-product with related Area product-direction notes, verify the project links to the canonical Area notes rather than copying their content;
 - for software profiles, verify the local Git root, absent index lock, required stub files, Obsidian `repo` path, repository backlink, and exact role parity between the project home and repository `AGENTS.md`; stop and report drift rather than choosing a side;
 - inspect the final diffs and Git status, distinguishing intended changes from unrelated pre-existing changes;
 - confirm no remote, dependency, commit, publication, deployment, purchase, message, installation, or represented next action was performed.

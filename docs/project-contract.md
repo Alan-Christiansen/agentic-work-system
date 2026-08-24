@@ -28,6 +28,7 @@ Project Name/
 ├── _Project Name.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
+├── Product Planning/        # software-product only: release UX and technical constraints
 ├── working files and folders...
 └── xPM/
     ├── Status.md
@@ -37,7 +38,7 @@ Project Name/
 
 The core project-home source template is stored as `templates/project/_Project Name.md`. Substitute `Project Name` while preserving the leading underscore when copying the scaffold; never copy it as a generic `Project.md`.
 
-The two profile documents shown above are alternatives, not universal files. Add only the extension required by `project_profile`. A software-product profile may also add its demonstrated `Product Planning/` structure; general and software-tool projects do not receive that folder by default.
+The two profile documents shown above are alternatives, not universal files. Add only the extension required by `project_profile`. A software-product profile also adds only its bounded-release `Product Planning/Technology & Constraints.md`, `Product Planning/User Experience/User Experience.md`, and contextual User Experience `Assets/` folder. General and software-tool projects do not receive that folder by default.
 
 Do not scaffold an obvious archive or deletion candidate merely to retire it. Classify it first; apply the current structure only to projects that will remain active, planned, paused, or otherwise intentionally retained.
 
@@ -213,10 +214,10 @@ The required `project_profile` selects the smallest useful requirements extensio
 | Profile | Use when | Added requirement |
 |---|---|---|
 | `general` | The project does not produce software | No additional required note |
-| `software-product` | The project produces software for an end user or customer | `Product Requirements.md` and the lean `Product Planning/` structure from `templates/project-profiles/software-product/` |
+| `software-product` | The project produces software for an end user or customer | A bounded-release `Product Requirements.md`, User Experience note, Technology & Constraints note, and contextual User Experience assets from `templates/project-profiles/software-product/` |
 | `software-tool` | The project produces a script, library, integration, internal tool, or reusable technical capability | `Technical Brief.md` from `templates/project-profiles/software-tool/` |
 
-A coded project must use one of the two software profiles. Product intent and user-facing requirements remain in the Obsidian project home; implementation architecture, code, tests, and detailed technical documentation remain in the companion repository. Link the two locations instead of duplicating them.
+A coded project must use one of the two software profiles. A software-product project is valid without a related Area when its PRD minimally defines one bounded release. When an explicitly supplied stewardship Area exists, the project may link its home and relevant product-direction notes. The relationship does not imply Area-candidate promotion, and Area-owned users and needs, product-wide feature direction, business and monetization, and incubated possibilities are linked rather than copied. Product intent and user-facing release requirements remain in the Obsidian project; implementation architecture, code, tests, and detailed technical documentation remain in the companion repository. Link the locations instead of duplicating them.
 
 Profiles may be extended only after a real project demonstrates a repeated need. Do not add empty profile documents to projects that do not use them.
 
