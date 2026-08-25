@@ -60,7 +60,7 @@ Before any mutation:
 
 1. read the nearest applicable `AGENTS.md` files and the current Area or project records allowed by the selected mode;
 2. resolve every project, asset, profile, origin, and repository path exactly;
-3. inspect the destination for files, case variants, symlinks, underscore-prefixed or legacy unprefixed home candidates, profile documents, `xPM/`, profile-provided folders, and filename or folder collisions;
+3. inspect the destination for files, case variants, symlinks, underscore-prefixed or legacy unprefixed home candidates, vault-local `AGENTS.md` or `CLAUDE.md`, profile documents, `xPM/`, profile-provided folders, and filename or folder collisions;
 4. for an existing repository, complete the read-only Git preflight in the repository reference;
 5. identify every file to create, preserve, rename, or edit and every Git operation proposed;
 6. present one compact preflight summary containing the mode, identity, profile, complete proposed role brief, exact paths, repository action and role-synchronization effect, promotion effects, provisional values, collisions, and stop boundaries;
@@ -75,6 +75,8 @@ Use the packaged templates under `assets/project/`, replacing every placeholder 
 ```text
 Project Name/
 ├── _Project Name.md
+├── AGENTS.md
+├── CLAUDE.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
 ├── Product Planning/        # software-product only: release UX and technical constraints
@@ -84,7 +86,7 @@ Project Name/
     └── Handoff.md
 ```
 
-Name the home with one leading underscore followed by the exact parent-folder name. Preserve existing working files. Add the approved `## Agent role` section after `## Tasks`, with non-empty `### Primary role`, `### Expertise to apply`, and `### Working approach` subsections. Never overwrite an underscore-prefixed or legacy unprefixed home candidate, profile document, `xPM` record, repository file, or asset merely because a template exists. Remove template guidance, placeholder decisions, and placeholder prose from the instantiated files. An empty `## Tasks` section is valid; never add an empty local checkbox.
+Name the home with one leading underscore followed by the exact parent-folder name. Replace `_Project Name.md` in the vault-local `AGENTS.md` with that exact home filename. Keep vault-local `CLAUDE.md` as the one-line import `@AGENTS.md`. These are thin cold-start adapters and remain distinct from richer repository-local adapters; do not duplicate the project role, requirements, Status, Handoff, or Decisions into them. Preserve existing working files. Add the approved `## Agent role` section after `## Tasks`, with non-empty `### Primary role`, `### Expertise to apply`, and `### Working approach` subsections. Never overwrite an underscore-prefixed or legacy unprefixed home candidate, adapter, profile document, `xPM` record, repository file, or asset merely because a template exists. Remove template guidance, placeholder decisions, and placeholder prose from the instantiated files. An empty `## Tasks` section is valid; never add an empty local checkbox.
 Format generated Markdown with no blank line immediately before or after a heading. Preserve intentional spacing elsewhere and do not alter heading spacing inside fenced examples.
 
 Record provisional public naming visibly while retaining the stable internal folder name, home filename, and `project_id`.
@@ -115,6 +117,8 @@ Before reporting success:
 - for promotion, validate the Area home against `assets/schemas/area.schema.json`;
 - verify the home has exactly one structural leading underscore and its remaining base name exactly matches the parent folder;
 - verify every required file exists and no forbidden profile file was added;
+- verify vault-local `AGENTS.md` names the exact project home, routes to Status, Handoff, conditional Decisions, and requirements when needed, and stays free of duplicated project content;
+- verify vault-local `CLAUDE.md` is exactly the one-line `@AGENTS.md` import;
 - verify dates, frontmatter values, link targets, lifecycle, blockers, and next actions;
 - verify no empty local task placeholder exists;
 - verify the complete approved role brief is present, non-empty, and does not imply authority or credentials;

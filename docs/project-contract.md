@@ -26,6 +26,8 @@ Every v0.3 project retained in `200 - Projects` has one underscore-prefixed, fol
 ```text
 Project Name/
 ├── _Project Name.md
+├── AGENTS.md
+├── CLAUDE.md
 ├── Product Requirements.md  # software-product only
 ├── Technical Brief.md       # software-tool only
 ├── Product Planning/        # software-product only: release UX and technical constraints
@@ -39,6 +41,11 @@ Project Name/
 The core project-home source template is stored as `templates/project/_Project Name.md`. Substitute `Project Name` while preserving the leading underscore when copying the scaffold; never copy it as a generic `Project.md`.
 
 The two profile documents shown above are alternatives, not universal files. Add only the extension required by `project_profile`. A software-product profile also adds only its bounded-release `Product Planning/Technology & Constraints.md`, `Product Planning/User Experience/User Experience.md`, and contextual User Experience `Assets/` folder. General and software-tool projects do not receive that folder by default.
+
+### Folder-local bootstrap adapters
+`AGENTS.md` is a thin provider-neutral cold-start adapter. It names the exact underscore-prefixed project home, routes a newly scoped agent through Status and Handoff, makes Decisions and deeper requirements conditional, and states the minimum authority boundary. It does not duplicate the project role, objective, definition of done, requirements, status, or handoff.
+
+`CLAUDE.md` contains only `@AGENTS.md`. These vault-local adapters make the project folder independently restartable and remain distinct from repository-local agent guidance. A repository adapter carries implementation instructions and the synchronized role copy; a vault adapter only routes project context. They are operational loading files, not project state or schema fields, so Project Contract v0.3 remains current.
 
 Do not scaffold an obvious archive or deletion candidate merely to retire it. Classify it first; apply the current structure only to projects that will remain active, planned, paused, or otherwise intentionally retained.
 

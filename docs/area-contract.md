@@ -13,6 +13,8 @@ Every managed Area using this contract has one underscore-prefixed, folder-match
 ```text
 Area Name/
 ├── _Area Name.md
+├── AGENTS.md
+├── CLAUDE.md
 ├── working files and folders...
 └── xPM/
     ├── Status.md
@@ -22,6 +24,11 @@ Area Name/
 ```
 
 The canonical base templates are under `templates/area/`. Optional approved working-material packs are under `templates/area-packs/`; they extend an Area without changing its contract or frontmatter schema.
+
+### Folder-local bootstrap adapters
+`AGENTS.md` is a thin provider-neutral cold-start adapter. It names the exact underscore-prefixed Area home, routes a newly scoped agent through Status and Handoff, makes Decisions conditional, and states the minimum authority boundary. It does not duplicate the Area role, tasks, proposals, definition, status, or handoff.
+
+`CLAUDE.md` contains only `@AGENTS.md`. These adapters make the folder independently restartable when a user grants an LLM only that Area. They are operational loading files, not Area state or schema fields, so Area Contract v0.2 remains current.
 
 ### Area home
 

@@ -37,8 +37,8 @@ This path belongs to the current local installation and must not become a requir
 - `docs/area-frontmatter-cheat-sheet.md`: quick reference for Area fields and accepted values
 - `schemas/project.schema.json`: current machine-readable frontmatter schema
 - `schemas/area.schema.json`: current machine-readable Area-home schema
-- `templates/project/`: minimum project scaffold
-- `templates/area/`: minimum managed-Area scaffold with one underscore-prefixed folder-matching human dashboard and an `xPM/` support bucket
+- `templates/project/`: minimum project scaffold with one human home, thin folder-local bootstrap adapters, and `xPM/` coordination records
+- `templates/area/`: minimum managed-Area scaffold with one human home, thin folder-local bootstrap adapters, and an `xPM/` support bucket
 - `templates/area-packs/`: optional, explicitly approved working-material packs for Areas, including durable product-venture direction
 - `templates/project-profiles/`: proportional requirements profiles; software-product projects receive a bounded-release PRD, UX note, technical-constraints note, and contextual UX assets
 - `plugins/agentic-work/`: shared Claude/Cowork and ChatGPT/Codex plugin source providing namespaced Agentic Work skills

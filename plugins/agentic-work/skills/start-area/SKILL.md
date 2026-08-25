@@ -41,7 +41,7 @@ Before any mutation:
 
 1. read the nearest applicable `AGENTS.md` files and the exact target folder when it exists;
 2. resolve the Area parent, folder, underscore-prefixed folder-matching home, `xPM/` paths, and any working-material paths exactly;
-3. inspect the destination for files, case variants, symlinks, underscore-prefixed or legacy unprefixed home candidates, generic dashboard notes that could be the intended home, `xPM/`, and filename or folder collisions;
+3. inspect the destination for files, case variants, symlinks, underscore-prefixed or legacy unprefixed home candidates, generic dashboard notes that could be the intended home, vault-local `AGENTS.md` or `CLAUDE.md`, `xPM/`, and filename or folder collisions;
 4. preserve existing working files and identify every file to create, preserve, rename, move, or edit;
 5. stop when an underscore-prefixed or legacy unprefixed home may already be an initialized Area, when ownership is uncertain, or when a move or merge could duplicate or lose material;
 6. present one compact preflight summary containing the Area identity, classification, exact paths, initial dashboard content, complete proposed role brief, preservation or normalization effects, provisional values, collisions, and stop boundaries;
@@ -60,13 +60,15 @@ Use the packaged templates under `assets/area/`, replacing every placeholder wit
 ```text
 Area Name/
 ├── _Area Name.md
+├── AGENTS.md
+├── CLAUDE.md
 └── xPM/
     ├── Status.md
     ├── Decisions.md
     └── Handoff.md
 ```
 
-Name the home with one leading underscore followed by the exact parent-folder name. Preserve existing working files. Never overwrite an underscore-prefixed or legacy unprefixed home candidate or `xPM` record merely because a template exists. Human working notes, research, records, drafts, deliverables, assets, and domain-meaningful folders remain outside `xPM/`.
+Name the home with one leading underscore followed by the exact parent-folder name. Replace `_Area Name.md` in the vault-local `AGENTS.md` with that exact home filename. Keep `CLAUDE.md` as the one-line import `@AGENTS.md`. These are thin cold-start adapters and must not duplicate the Area role, Status, Handoff, Decisions, or working material. Preserve existing working files. Never overwrite an underscore-prefixed or legacy unprefixed home candidate, adapter, or `xPM` record merely because a template exists. Human working notes, research, records, drafts, deliverables, assets, and domain-meaningful folders remain outside `xPM/`.
 Format generated Markdown with no blank line immediately before or after a heading. Preserve intentional spacing elsewhere and do not alter heading spacing inside fenced examples.
 
 When the approved write set includes the `product-venture` pack, instantiate only `assets/area-packs/product-venture/` beside the Area home. Add a compact `## Product direction` section to the Area home that links each instantiated pack note using paths resolved for that Area. The Area home remains the dashboard; the linked notes own the deeper durable venture material. Never add the pack by default, partially instantiate it, or infer it from an Area name alone.
@@ -96,6 +98,8 @@ Before reporting success:
 - validate the Area home against `assets/schemas/area.schema.json`;
 - verify the home has exactly one structural leading underscore and its remaining base name exactly matches the parent folder;
 - verify the required Area and `xPM` files exist;
+- verify vault-local `AGENTS.md` names the exact Area home, routes to Status, Handoff, and conditional Decisions, and stays free of duplicated Area content;
+- verify vault-local `CLAUDE.md` is exactly the one-line `@AGENTS.md` import;
 - verify no Project profile document, project frontmatter, repository stub, or definition of done was added;
 - verify dates, frontmatter values, lifecycle, blockers, and next actions;
 - verify no empty local task checkbox or placeholder proposed project remains;
