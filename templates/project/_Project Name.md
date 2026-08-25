@@ -19,6 +19,8 @@ blocked_by: []
 ---
 # Project Name
 ## Tasks
+
+---
 ## Agent role
 ### Primary role
 Apply the perspective and methods of an approved role appropriate to this project.

@@ -18,6 +18,8 @@ blocked_by: []
 ---
 # Area Name
 ## Tasks
+
+---
 ## Proposed Projects
 ### Project idea
 Write freely about the intent, useful context, links, or anything else worth remembering.
