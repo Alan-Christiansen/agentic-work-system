@@ -2,7 +2,7 @@
   "name": "agentic-pm",
   "displayName": "Agentic PM",
   "description": "Capacity-aware project, Area, and portfolio management over human-owned plain files.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Spectra Studio"
   }

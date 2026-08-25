@@ -3,16 +3,10 @@
 Provider-neutral project, Area, and portfolio-management skills built on the Agentic Work System contracts.
 
 ## Included skills
-
-- `agentic-pm:portfolio-review`: compare managed commitments inside one domain and recommend focus.
-- `agentic-pm:plan-week`: choose a realistic primary weekly outcome and, when justified, one secondary maintenance outcome.
-- `agentic-pm:choose-next-action`: select one concrete action that fits the available time and attention.
-- `agentic-pm:stuck-rescue`: diagnose the active constraint and reduce it to one finishable move.
-- `agentic-pm:review-area`: review one ongoing responsibility without turning it into a finishable project.
-- `agentic-pm:review-project-candidate`: shape or compare an inactive Area proposal without silently promoting it.
+- `agentic-pm:review`: review managed work at the appropriate portfolio, domain, Area, Project, or inactive-candidate scope and recommend what deserves attention.
+- `agentic-pm:focus`: turn an accepted direction into a realistic weekly plan or one finishable session move, diagnosing stuckness when needed.
 - `agentic-pm:refresh-dashboards`: refresh every configured generated PM dashboard and verify live-query dashboards without changing canonical records.
-
-All skills use the shared policy in `references/operating-policy.md`. Personal goals, constraints, priorities, business context, and live work state remain in the user's own knowledge workspace.
+All skills use the shared policy in `references/operating-policy.md`. `review` and `focus` route internally by target, horizon, and working state so the user does not need to select fine-grained management modes. Personal goals, constraints, priorities, business context, and live work state remain in the user's own knowledge workspace.
 
 ## Codex
 

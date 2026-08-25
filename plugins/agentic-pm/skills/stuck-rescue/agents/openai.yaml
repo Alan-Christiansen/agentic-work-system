@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentic PM: Stuck Rescue"
-  short_description: "Turn stuckness into one doable move"
-  default_prompt: "Use $agentic-pm:stuck-rescue to diagnose what is blocking me and give me one finishable move."

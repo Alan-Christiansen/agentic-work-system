@@ -3,8 +3,7 @@
 A portable, file-first system for coordinating Alan and multiple AI agents across projects without making any provider's conversation history the source of truth.
 
 ## Current milestone
-
-Complete an independent review of the initial `agentic-pm` plugin and the personal/public configuration split.
+Consolidate and dogfood the adaptive Agentic PM review and focus interaction surface while preserving deterministic dashboard refresh.
 
 ## Boundaries
 

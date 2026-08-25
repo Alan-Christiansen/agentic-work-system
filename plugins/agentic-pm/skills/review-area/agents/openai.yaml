@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentic PM: Review Area"
-  short_description: "Steward one ongoing responsibility"
-  default_prompt: "Use $agentic-pm:review-area to review this Area and recommend one appropriate maintenance action."

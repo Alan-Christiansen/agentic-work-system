@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic PM: Review"
+  short_description: "Review health and choose what deserves focus"
+  default_prompt: "Use $agentic-pm:review to review the relevant managed work and recommend a realistic focus."

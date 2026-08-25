@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic PM: Focus"
+  short_description: "Turn priorities into a realistic plan or move"
+  default_prompt: "Use $agentic-pm:focus to turn my current priority into a realistic plan for the time and energy I have."

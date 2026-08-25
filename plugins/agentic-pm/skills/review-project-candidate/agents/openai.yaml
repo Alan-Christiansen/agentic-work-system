@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentic PM: Review Project Candidate"
-  short_description: "Assess an inactive project proposal"
-  default_prompt: "Use $agentic-pm:review-project-candidate to assess this proposal without activating it."

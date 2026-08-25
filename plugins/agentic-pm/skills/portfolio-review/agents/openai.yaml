@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agentic PM: Portfolio Review"
-  short_description: "Choose focus across managed commitments"
-  default_prompt: "Use $agentic-pm:portfolio-review to review my managed work in one domain and recommend a realistic focus."

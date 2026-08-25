@@ -1,6 +1,6 @@
 {
   "name": "agentic-pm",
-  "version": "0.2.0+codex.20260825163615",
+  "version": "0.3.0+codex.20260825184011",
   "description": "Capacity-aware project, Area, and portfolio management over human-owned plain files.",
   "author": {
     "name": "Spectra Studio"
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Agentic PM",
     "shortDescription": "Plan realistic work across Areas and projects.",
-    "longDescription": "Agentic PM provides dashboard refresh, focused portfolio review, weekly planning, next-action selection, stuck rescue, Area stewardship, and project-candidate review while keeping personal data in user-owned files.",
+    "longDescription": "Agentic PM provides adaptive review and focus workflows plus deterministic dashboard refresh while keeping personal data in user-owned files.",
     "developerName": "Spectra Studio",
     "brandColor": "#4F46E5",
     "composerIcon": "./assets/spectra-studio-placeholder.png",
@@ -20,10 +20,9 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Review my managed portfolio in one domain.",
-      "Refresh all of my configured PM dashboards.",
-      "Help me plan a realistic week.",
-      "Help me get unstuck on my current work."
+      "Review the managed work that deserves attention.",
+      "Turn my current priority into a realistic focus plan.",
+      "Refresh all of my configured PM dashboards."
     ]
   }
 }
