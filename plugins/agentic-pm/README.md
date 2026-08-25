@@ -10,6 +10,7 @@ Provider-neutral project, Area, and portfolio-management skills built on the Age
 - `agentic-pm:stuck-rescue`: diagnose the active constraint and reduce it to one finishable move.
 - `agentic-pm:review-area`: review one ongoing responsibility without turning it into a finishable project.
 - `agentic-pm:review-project-candidate`: shape or compare an inactive Area proposal without silently promoting it.
+- `agentic-pm:refresh-dashboards`: refresh every configured generated PM dashboard and verify live-query dashboards without changing canonical records.
 
 All skills use the shared policy in `references/operating-policy.md`. Personal goals, constraints, priorities, business context, and live work state remain in the user's own knowledge workspace.
 

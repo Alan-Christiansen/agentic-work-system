@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agentic PM: Refresh Dashboards"
+  short_description: "Refresh every configured PM dashboard"
+  default_prompt: "Use $agentic-pm:refresh-dashboards to refresh all of my configured PM dashboards from canonical records."

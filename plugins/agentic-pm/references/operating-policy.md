@@ -17,6 +17,16 @@ This file defines reusable behavior. Personal facts, goals, business strategy, i
 - Derived dashboards and task queries are interfaces, never a second task store.
 - Conversations and provider memory are supporting context only.
 
+## Derived dashboards
+
+Dashboard configuration belongs in the user's knowledge workspace. Reusable PM behavior must not hardcode personal source roots, output paths, domain labels, or installation details.
+
+A dashboard refresh reads canonical Area and Project homes and may write only configured generated dashboards. It may verify a live-query dashboard without rewriting it. Refresh does not authorize changes to source records, tasks, lifecycle, classifications, priorities, next actions, `xPM/` state, or represented work.
+
+A cross-domain Portfolio Dashboard is an inventory and navigation surface, not a cross-domain priority recommendation. It may display every explicitly discovered Area and Project, including excluded or unclassified records, while normal management recommendations continue to use only eligible records in one selected domain unless the user explicitly requests compact cross-domain capacity review.
+
+Generated dashboard rows preserve canonical home metadata and link back to the home. Missing or invalid overview state remains visible rather than being guessed. A generated dashboard never overrides, resurrects, or silently repairs a source record.
+
 ## Work types
 
 - An Area is an ongoing responsibility without a definition of done. It may contain bounded tasks and inactive Proposed Projects.

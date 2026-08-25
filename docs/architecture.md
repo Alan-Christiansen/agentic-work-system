@@ -65,6 +65,8 @@ Agentic PM is a reusable capability implemented in the independently versioned `
 
 Cross-domain coordination is an optional, explicitly invoked capacity view. It compares compact commitments to help allocate attention among domains, then returns detailed management to the selected domain scope.
 
+Derived dashboards provide visibility without becoming management authority. A live-query Tasks Dashboard aggregates canonical task lines. A generated Portfolio Dashboard inventories every discovered Area and Project across domains with links and compact home-frontmatter state. Cross-domain visibility does not itself authorize cross-domain prioritization, and dashboard refresh never changes canonical records.
+
 The underscore-prefixed, folder-matching Area or Project home is user-owned plain Markdown and the only human-facing PM file. Area homes include quick Tasks and free-form Proposed Projects; Project homes include directly editable Tasks and the finishable project definition. Thin `AGENTS.md` and `CLAUDE.md` files are host bootstrap adapters rather than parallel human state: they route a newly scoped agent to the home, Status, Handoff, and conditional Decisions, then stop. Humans can edit the home directly; agents discover changes by rereading it before PM work. Absence is authoritative, so `xPM/`, older conversations, and handoffs cannot resurrect deleted human state.
 
 Task detail uses progressive disclosure. Visible home-note checklists stay one line per task. An optional linked `xPM/Notes/AT-*` file holds restart details only for an Area task that earns them, and agents load it only when needed.
@@ -73,7 +75,7 @@ Project-candidate detail follows the same progressive-disclosure pattern without
 
 `xPM/` is a reserved coordination bucket at the bottom of each Area or Project folder. Status, handoff, PM-governance decisions, and earned per-item support live there. Human working files remain at root or in domain-meaningful folders regardless of whether an agent helped create them.
 
-Canonical tasks remain distributed in their relevant underscore-prefixed, folder-matching human homes so scoped agents receive complete local context. An optional vault-level Tasks-plugin dashboard provides one eagle-eye human view by querying those sources. It may group `#urgent`, `#soon`, and untagged work, but it never owns or duplicates task state.
+Canonical tasks remain distributed in their relevant underscore-prefixed, folder-matching human homes so scoped agents receive complete local context. An optional vault-level Tasks Dashboard provides one eagle-eye human view through Tasks-plugin queries over those sources. It may group `#urgent`, `#soon`, and untagged work, but it never owns or duplicates task state.
 
 Optional task-tool features may enhance that surface without becoming a dependency. Inline dates, tags, priorities, recurrence, and query views are allowed, but the source checkbox line remains the portable canonical record and the full workflow must remain legible without the tool.
 
@@ -81,7 +83,7 @@ Optional task-tool features may enhance that surface without becoming a dependen
 
 The Multi-Agent Project Protocol is foundational. The Agentic PM is one capability built on it. Specialist roles such as marketing, research, implementation, and review also consume the same protocol.
 
-Reusable skills are distributed through thin host-specific plugin manifests around provider-neutral skill sources. `agentic-work` owns Area and Project initialization plus checkpointing. The separate `agentic-pm` plugin owns portfolio review, weekly planning, next-action selection, stuck rescue, Area stewardship, and project-candidate review. Keeping both plugins in this repository preserves one protocol while allowing their versions, installation, and sharing to evolve independently.
+Reusable skills are distributed through thin host-specific plugin manifests around provider-neutral skill sources. `agentic-work` owns Area and Project initialization plus checkpointing. The separate `agentic-pm` plugin owns dashboard refresh, portfolio review, weekly planning, next-action selection, stuck rescue, Area stewardship, and project-candidate review. Keeping both plugins in this repository preserves one protocol while allowing their versions, installation, and sharing to evolve independently.
 
 The reusable Agentic PM operating policy lives with the `agentic-pm` plugin and contains no required personal, career, venture, or installation-specific state. A user's knowledge workspace supplies personal context, goals, constraints, priorities, and live records. A local Agentic PM note may configure or track adoption for that user, but it is not the canonical behavior definition.
 
