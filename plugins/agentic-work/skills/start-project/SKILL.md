@@ -36,7 +36,7 @@ Obtain or confirm these values before writing:
 - for Area promotion, the exact Area home and candidate origin;
 - for either software profile, repository mode and exact local path.
 
-Ask for missing information in one compact intake when practical. The skill may draft a clearly provisional role brief from approved context, but must obtain explicit approval before writing it. Do not invent public claims, names, locations, classifications, objectives, finish lines, next actions, or a final role.
+Ask for missing information in one compact intake when practical. Explicitly ask exactly: “Would you like to define the Agent Role, or should I propose one?” If the user defines it, preserve their wording and guidance. If they request a proposal, ask for any guidance they want considered, draft a clearly provisional role brief from approved context, and obtain explicit approval before writing it. Do not invent public claims, names, locations, classifications, objectives, finish lines, next actions, or a final role.
 
 The role shapes perspective and methods only. It does not grant credentials, tool access, decision rights, or authority beyond the contract and current task.
 

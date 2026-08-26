@@ -29,7 +29,7 @@ Obtain or confirm these values before writing:
 - existing working files, asset locations, canonical records, or external work locations that must be preserved or linked.
 - whether the optional `product-venture` pack is appropriate and explicitly requested when the Area continuously stewards a software product venture.
 
-Ask for missing information in one compact intake when practical. The skill may draft a clearly provisional role brief from approved context, but must obtain explicit approval before writing it. Do not invent names, locations, classifications, responsibilities, healthy-state claims, boundaries, tasks, project candidates, blockers, next actions, or a final role. Do not add a definition of done.
+Ask for missing information in one compact intake when practical. Explicitly ask exactly: “Would you like to define the Agent Role, or should I propose one?” If the user defines it, preserve their wording and guidance. If they request a proposal, ask for any guidance they want considered, draft a clearly provisional role brief from approved context, and obtain explicit approval before writing it. Do not invent names, locations, classifications, responsibilities, healthy-state claims, boundaries, tasks, project candidates, blockers, next actions, or a final role. Do not add a definition of done.
 
 The role shapes perspective and methods only. It does not grant credentials, tool access, decision rights, or authority beyond the contract and current task.
 
