@@ -76,13 +76,13 @@ Agents may propose a provisional role brief from approved context, but must labe
 
 ### Project tasks
 
-The project home's `## Tasks` section is the canonical human-editable task surface for work that drives the project forward. A bare checkbox is valid. Direct human markers, wording, additions, deletions, dates, and urgency tags override derived xPM state.
+The project home's `## Tasks` section is the canonical human-editable task surface for work that drives the project forward. A bare checkbox is valid. Direct human markers, wording, additions, deletions, dates, attention tags, and urgency tags override derived xPM state.
 
-An empty `## Tasks` section is valid. Do not retain an empty checkbox as a capture placeholder in a Project home: task aggregators correctly treat it as a real task and surface a blank result. Add a checkbox only when it names actual work; use the optional vault-level Inbox for unassigned quick capture.
+An empty `## Tasks` section is valid. Do not retain an empty checkbox as a capture placeholder in a Project home: task aggregators correctly treat it as a real task and surface a blank result. Add a checkbox only when it names actual work, and capture each task directly in the appropriate Area or Project home rather than a PM-dashboard Inbox.
 
-Use the same urgency vocabulary as managed Areas: `#urgent`, `#soon`, or no urgency tag. The PM assigns and maintains these tags conservatively during ingestion and review; Alan never has to classify a task before capturing it. `📅` remains a real deadline and `⏳` remains the date work becomes actionable.
+Use the same attention vocabulary as managed Areas: mutually exclusive `#now`, `#up-next`, or untagged backlog stages plus a rare independent `#urgent` alert that may overlap any stage. `#now` means selected current focus rather than merely started work; `[/]` remains the in-progress marker. The PM recommends tag changes during read-only review or focus work and applies them only during explicitly authorized record maintenance; Alan never has to classify a task before capturing it. `📅` remains a real deadline and `⏳` remains the date work becomes actionable. Dates inform judgment without automatically assigning urgency or an attention stage.
 
-A vault-level Tasks-plugin dashboard may aggregate tasks from underscore-prefixed, folder-matching Project and Area homes. It is a derived interaction view, not another task store.
+A vault-level Tasks-plugin dashboard may aggregate tasks from underscore-prefixed, folder-matching Project and Area homes. Now, Up Next, and Backlog are non-overlapping; Urgent may intentionally overlap any of them. It is a derived interaction view, not another task store.
 
 ### Status
 

@@ -31,7 +31,7 @@ Build and test a small, provider-neutral project protocol. Prefer demonstrated w
 - Load a linked `xPM/Notes/PC-*` file only when shaping, comparing, or proposing promotion for that project candidate; do not load candidate detail during a simple home-note scan.
 - Treat `xPM/` as agent coordination infrastructure. Keep human working notes, requirements, research, records, drafts, and deliverables outside it.
 - Preserve recognized inline task dates, tags, priorities, and recurrence during edits. Treat plugin query views as derived interfaces, never as a second task source of truth.
-- During authorized PM ingestion and review, assign `#urgent`, `#soon`, or no urgency tag based on consequences, dates, actionability, dependencies, and current commitments. Keep `#urgent` rare, remove stale urgency, and treat direct human tag edits as authoritative.
+- During authorized PM maintenance, use `#now`, `#up-next`, or no attention tag for the mutually exclusive ordinary sequence. Keep `#now` very small and `#up-next` credible. Treat `#urgent` as a rare independent alert that may overlap any stage, preserve dates as distinct facts, and treat direct human tag edits as authoritative.
 - Keep reusable machinery free of Alan's personal, career, and venture data.
 - Treat the reusable repository as future-public: do not add secrets, private data, new hard-coded installation paths, or dependencies on one user's vault layout.
 - Make small, reversible changes and verify them in proportion to risk.

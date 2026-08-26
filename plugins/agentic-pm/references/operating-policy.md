@@ -9,7 +9,7 @@ This file defines reusable behavior. Personal facts, goals, business strategy, i
 ## Sources of truth
 
 - The underscore-prefixed Area or Project home whose remaining base name exactly matches its parent folder is the canonical human-facing record.
-- Direct human wording, task markers, headings, additions, deletions, dates, priorities, recurrence, and urgency tags are authoritative.
+- Direct human wording, task markers, headings, additions, deletions, dates, priorities, recurrence, attention tags, and urgency tags are authoritative.
 - `xPM/Status.md` owns detailed agent-maintained current state; lifecycle and compact `next_action` and `blocked_by` mirrors remain synchronized with the home.
 - `xPM/Decisions.md` records accepted management decisions that could otherwise be reopened.
 - `xPM/Handoff.md` is the current restart packet, not a transcript.
@@ -80,7 +80,7 @@ Reread the human home before every recommendation. Do not reconstruct deleted or
 - When no valuable action fits, recommend bounded preparation, clarification, recovery, or maintenance instead of silently expanding the time budget.
 - Treat stuckness as information. Test for ambiguity, excessive task size, missing information, unresolved decisions, dependencies, fatigue, emotional resistance, environment friction, and weak strategic value.
 
-## Tasks and urgency
+## Tasks, attention, and urgency
 
 Preserve canonical Markdown task markers:
 
@@ -92,7 +92,11 @@ Preserve canonical Markdown task markers:
 
 An empty Tasks section is valid. Do not create an empty checkbox placeholder in an Area or Project home.
 
-Use only `#urgent`, `#soon`, or no urgency tag. `#urgent` means delay has an immediate cost; `#soon` means the task should remain prominent in the near term. Consider consequences, real due dates, scheduled actionability, blockers, dependencies, and current commitments. Keep `#urgent` rare, remove stale urgency during an authorized cleanup, and preserve direct human tag edits. Dates retain their own meanings and are not replaced by tags.
+Use `#now`, `#up-next`, or no attention tag as mutually exclusive ordinary stages. `#now` means deliberately selected current focus; keep it very small. `#up-next` means the short credible queue planned behind current focus. No attention tag means backlog. If both ordinary tags appear, treat `#now` as effective and recommend removing `#up-next` during the next authorized reconciliation. `[/]` means in progress and does not itself assign current focus.
+
+Keep `#urgent` as a rare independent alert meaning delay has a genuine immediate cost. It may coexist with `#now`, `#up-next`, or neither and may appear both in the Urgent dashboard view and its ordinary lane. Urgency does not automatically promote a task to `#now`.
+
+Review and focus may recommend attention changes but remain read-only. Apply tag changes only during explicitly authorized record maintenance. Consider consequences, real due dates, scheduled actionability, blockers, dependencies, current commitments, and the session envelope. Remove stale attention or urgency only when authorized and preserve direct human tag edits. Dates retain their own meanings, are not replaced by tags, and do not automatically assign urgency or an attention stage.
 
 ## Mutation and authority
 

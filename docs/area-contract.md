@@ -105,7 +105,7 @@ Agents may propose a provisional role brief from approved context, but must labe
 
 A complete task may be only one line. IDs, dates, rationale, and next-action details are optional. Agents must not ignore or rewrite a quick task merely because metadata is absent.
 
-An empty `## Tasks` section is valid. Do not retain an empty checkbox as a capture placeholder in an Area home: task aggregators correctly treat it as a real task and surface a blank result. Add a checkbox only when it names actual work; use the optional vault-level Inbox for unassigned quick capture.
+An empty `## Tasks` section is valid. Do not retain an empty checkbox as a capture placeholder in an Area home: task aggregators correctly treat it as a real task and surface a blank result. Add a checkbox only when it names actual work, and capture each task directly in the appropriate Area or Project home rather than a PM-dashboard Inbox.
 
 Keep the checklist visually tight. When a task genuinely needs restart context, generate one support note under `xPM/Notes/` and add a short link on the task line:
 
@@ -133,19 +133,23 @@ Agents scan the Area home's Tasks section first and load a linked task PM Note o
 
 Plain Markdown remains canonical. Optional task-tool dates, priorities, recurrence, tags, and query views may enhance the source task when they change behavior. Do not require a global task tag or add tags that merely repeat Area or domain location. Plugin views remain derived interfaces, not another source of truth.
 
-#### Urgency tags
+#### Attention and urgency tags
 
-Use only two qualitative urgency tags:
+Use a small ordinary attention sequence:
 
-- `#urgent` means delay has an immediate cost and the task needs attention now;
-- `#soon` means the task should remain prominent in the near term;
-- no urgency tag means normal or backlog work.
+- `#now` means the task is deliberately selected as current focus;
+- `#up-next` means the task is planned next but has not been promoted into current focus;
+- no attention tag means backlog.
 
-The PM assigns and maintains urgency during ingestion and review. It considers real due dates, scheduled actionability, consequences of delay, blockers, dependencies, and current commitments. It removes or downgrades stale urgency and keeps `#urgent` rare. Never require Alan to classify a bare captured task before it is valid.
+These ordinary stages are mutually exclusive. Keep `#now` very small and `#up-next` bounded enough to remain credible. If both tags appear, `#now` wins and the PM recommends removal of `#up-next` during the next authorized reconciliation. `[/]` still means work has started; it does not by itself make the task current focus.
 
-Dates retain their own meanings: `📅` is a real deadline and `⏳` is when work becomes actionable. A date may influence the PM's urgency judgment but is not replaced by a tag. If both urgency tags are present, `#urgent` wins and the PM removes `#soon` during the next authorized cleanup. Direct human tag edits are authoritative.
+`#urgent` is a separate rare alert meaning delay has a genuine immediate cost. It may coexist with `#now`, `#up-next`, or neither and may therefore appear in both the Urgent dashboard view and its ordinary attention lane. Urgency does not automatically promote a task into current focus.
 
-An optional vault-level Tasks-plugin dashboard may aggregate canonical tasks from underscore-prefixed, folder-matching Area and Project homes. It is a derived human view: toggling a result updates the source task, and the dashboard never duplicates or becomes canonical task state.
+The PM recommends attention changes during read-only review or focus work and applies them only during explicitly authorized record maintenance. Consider real due dates, scheduled actionability, consequences of delay, blockers, dependencies, current commitments, and the available session envelope. Remove stale attention or urgency only when authorized, preserve direct human tag edits, and never require Alan to classify a bare captured task before it is valid.
+
+Dates retain their own meanings: `📅` is a real deadline and `⏳` is when work becomes actionable. A date may inform an attention or urgency recommendation but is not replaced by a tag and does not automatically enter the Urgent view. Dated tasks remain visible in their ordinary lane.
+
+An optional vault-level Tasks-plugin dashboard may aggregate canonical tasks from underscore-prefixed, folder-matching Area and Project homes. Now, Up Next, and Backlog are non-overlapping; Urgent intentionally overlaps any of them. It is a derived human view: toggling a result updates the source task, and the dashboard never duplicates or becomes canonical task state.
 
 #### Proposed Projects
 

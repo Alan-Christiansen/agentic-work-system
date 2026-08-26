@@ -75,7 +75,7 @@ Project-candidate detail follows the same progressive-disclosure pattern without
 
 `xPM/` is a reserved coordination bucket at the bottom of each Area or Project folder. Status, handoff, PM-governance decisions, and earned per-item support live there. Human working files remain at root or in domain-meaningful folders regardless of whether an agent helped create them.
 
-Canonical tasks remain distributed in their relevant underscore-prefixed, folder-matching human homes so scoped agents receive complete local context. An optional vault-level Tasks Dashboard provides one eagle-eye human view through Tasks-plugin queries over those sources. It may group `#urgent`, `#soon`, and untagged work, but it never owns or duplicates task state.
+Canonical tasks remain distributed in their relevant underscore-prefixed, folder-matching human homes so scoped agents receive complete local context. An optional vault-level Tasks Dashboard provides one eagle-eye human view through Tasks-plugin queries over those sources. The ordinary attention sequence uses mutually exclusive `#now`, `#up-next`, or untagged backlog stages. A rare independent `#urgent` alert may overlap any ordinary lane, so the dashboard may intentionally show an urgent task twice while never owning or duplicating source state.
 
 Optional task-tool features may enhance that surface without becoming a dependency. Inline dates, tags, priorities, recurrence, and query views are allowed, but the source checkbox line remains the portable canonical record and the full workflow must remain legible without the tool.
 
